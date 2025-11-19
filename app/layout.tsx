@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   description:
     "You're invited to the wedding of Kenneth & Angel! Join us on January 11, 2026 in Camp Edgar Garden. RSVP, read our love story, view our gallery, and leave a message for the couple.",
   keywords:
-    "Kenneth & Angel wedding, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2026 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Camp Edgar Garden, #KENNETHhelpfallingforANGEL, #AngelforKen2026",
+    "Kenneth & Angel wedding, Filipino wedding, RSVP, wedding gallery, wedding message wall, wedding invitation, 2026 weddings, love story, guestbook, wedding registry, wedding details, wedding venues Camp Edgar Garden, #KennethAndAngelWedding",
   authors: [
     { name: "Kenneth" },
     { name: "Angel" },
@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kenneth & Angel Wedding Invitation",
     description:
-      "You're invited to the wedding of Kenneth & Angel! January 11, 2026. RSVP, view our gallery, and leave a message! #KENNETHhelpfallingforANGEL #AngelforKen2026",
+      "You're invited to the wedding of Kenneth & Angel! January 11, 2026. RSVP, view our gallery, and leave a message! #KennethAndAngelWedding",
     images: ["https://Kenneth-and-Angel-invitation.vercel.app/Details/image.png"],
     creator: "@kennethandangel",
   },
@@ -135,7 +135,7 @@ export const metadata: Metadata = {
         price: "0",
         priceCurrency: "PHP",
       },
-        eventHashtag: "#KENNETHhelpfallingforANGEL #AngelforKen2026",
+        eventHashtag: "#KENNETHelpFallingForANGEL #AngelforKen2026",
     }),
   },
 }

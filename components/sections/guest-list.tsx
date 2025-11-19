@@ -320,7 +320,7 @@ export function GuestList() {
                 "0 0 15px rgba(0, 0, 0, 0.8), 0 0 30px rgba(0, 0, 0, 0.6), 0 2px 4px rgba(0, 0, 0, 0.5)",
             }}
           >
-            Please confirm by January 1, 2026
+            Please confirm by January 1, 2025
           </p>
           {/* <div
             className="flex items-center justify-center gap-2 text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/90 font-light"

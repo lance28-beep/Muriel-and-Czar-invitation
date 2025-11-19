@@ -43,7 +43,7 @@ export function Hero() {
           </h1>
 
           {/* And - Script Style */}
-          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-ephesis)] text-[#3C3C3C] -my-2 sm:-my-3">
+          <p className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[family-name:var(--font-ephesis)] text-[#3C3C3C] my-4 sm:my-6 md:my-8">
             and
           </p>
 
