@@ -71,10 +71,10 @@ export default async function GalleryPage() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
               <span className="px-4 py-2 bg-[#C3A161]/20 border border-[#C3A161]/40 rounded-full text-[#C3A161] font-sans font-medium text-sm sm:text-base">
-                #GoingBAEyond
+                #KENNETHhelpfallingforANGEL
               </span>
               <span className="px-4 py-2 bg-[#C3A161]/20 border border-[#C3A161]/40 rounded-full text-[#C3A161] font-sans font-medium text-sm sm:text-base">
-                #BrendanAirezToEternity
+                #AngelforKen2026
               </span>
             </div>
             <Link

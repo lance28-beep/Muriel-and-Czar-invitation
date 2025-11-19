@@ -24,7 +24,7 @@ export function SnapShare() {
     typeof window !== "undefined"
       ? window.location.href
       : "https://example.com";
-  const hashtags = ["#KennethAndAngel2026", "#KAZaragozaWedding"];
+  const hashtags = ["#KENNETHhelpfallingforANGEL", "#AngelforKen2026"];
   const shareText = `Join us in celebrating Kenneth & Angel's special day! Check out their wedding website: ${websiteUrl} ${hashtags.join(" ")} 💕`;
 
   useEffect(() => {

@@ -135,7 +135,7 @@ export const metadata: Metadata = {
         price: "0",
         priceCurrency: "PHP",
       },
-        eventHashtag: "#KennethAndAngelWedding",
+        eventHashtag: "#KENNETHhelpfallingforANGEL #AngelforKen2026",
     }),
   },
 }
