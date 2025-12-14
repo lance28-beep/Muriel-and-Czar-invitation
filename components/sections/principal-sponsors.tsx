@@ -24,7 +24,7 @@ export function PrincipalSponsors() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold uppercase text-[#0A3629] mb-2 sm:mb-3 md:mb-4 tracking-[0.1em] sm:tracking-[0.12em] ${textAlign} ${className}`}>
+      <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold uppercase text-[#800A06] mb-2 sm:mb-3 md:mb-4 tracking-[0.1em] sm:tracking-[0.12em] ${textAlign} ${className}`}>
         {children}
       </h3>
     )
@@ -38,7 +38,7 @@ export function PrincipalSponsors() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <div className={`flex flex-col ${containerAlign} justify-center py-0.5 sm:py-1 md:py-1.5 w-full`}>
-        <p className={`text-[#0A3629] text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-medium leading-tight sm:leading-snug break-words ${textAlign}`}>{name}</p>
+        <p className={`text-[#800A06] text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-medium leading-tight sm:leading-snug break-words ${textAlign}`}>{name}</p>
       </div>
     )
   }
@@ -92,20 +92,20 @@ export function PrincipalSponsors() {
       className="relative py-8 sm:py-12 md:py-16 lg:py-20"
     >
       {/* Semi-transparent overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white/60 via-[#688277]/40 to-white/60 backdrop-blur-sm pointer-events-none" />
+      <div className="absolute inset-0 bg-[#EFCA93] backdrop-blur-sm pointer-events-none" />
 
       {/* Header */}
       <div className="relative z-10 text-center mb-6 sm:mb-10 md:mb-12 px-3 sm:px-4 md:px-6">
         <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
           <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
         </div>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#0A3629] mb-3 sm:mb-4 md:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] md:tracking-[0.15em] elegant-text-shadow">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] mb-3 sm:mb-4 md:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] md:tracking-[0.15em] elegant-text-shadow">
           Principal Sponsors
         </h2>
         <div className="flex items-center justify-center gap-2 sm:gap-3 mb-3 sm:mb-4">
           <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
         </div>
-        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#0A3629]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2 sm:px-4">
+        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2 sm:px-4">
           Our Beloved Godparents
         </p>
       </div>
@@ -115,7 +115,7 @@ export function PrincipalSponsors() {
         {/* Main card with elegant styling */}
         <div className="relative group">
           {/* Subtle earth tone glow on hover */}
-          <div className="absolute -inset-1 bg-gradient-to-br from-[#9F8650]/20 to-[#688277]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+          <div className="absolute -inset-1 bg-gradient-to-br from-[#9F8650]/20 to-[#800A06]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
           
           <div className="relative elegant-card rounded-xl sm:rounded-2xl overflow-hidden border border-[#9F8650]/30 premium-shadow hover:border-[#9F8650]/50 transition-all duration-300">
             {/* Card content */}
@@ -123,8 +123,8 @@ export function PrincipalSponsors() {
               {isLoading ? (
                 <div className="flex items-center justify-center py-12 sm:py-16 md:py-24">
                   <div className="flex flex-col items-center gap-3 sm:gap-4">
-                    <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 animate-spin text-[#9F8650]" />
-                    <span className="text-[#0A3629]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
+                    <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 animate-spin text-[#800A06]" />
+                    <span className="text-[#800A06]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
                       Loading sponsors...
                     </span>
                   </div>
@@ -135,7 +135,7 @@ export function PrincipalSponsors() {
                     <p className="text-red-600 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg mb-3 sm:mb-4">{error}</p>
                     <button
                       onClick={fetchSponsors}
-                      className="text-[#0A3629] hover:text-[#0A3629]/70 font-[family-name:var(--font-crimson)] underline transition-colors duration-300 text-sm sm:text-base"
+                      className="text-[#800A06] hover:text-[#800A06]/70 font-[family-name:var(--font-crimson)] underline transition-colors duration-300 text-sm sm:text-base"
                     >
                       Try again
                     </button>
@@ -143,8 +143,8 @@ export function PrincipalSponsors() {
                 </div>
               ) : sponsorPairs.length === 0 ? (
                 <div className="text-center py-12 sm:py-16 md:py-24">
-                  <Users className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[#0A3629]/30 mx-auto mb-3 sm:mb-4" />
-                  <p className="text-[#0A3629]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
+                  <Users className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[#800A06]/30 mx-auto mb-3 sm:mb-4" />
+                  <p className="text-[#800A06]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
                     No sponsors yet
                   </p>
                 </div>

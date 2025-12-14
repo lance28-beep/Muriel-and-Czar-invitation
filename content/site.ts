@@ -1,23 +1,23 @@
 export const siteConfig = {
   couple: {
-    bride: "Jay-R Valenzuela",
-    brideNickname: "Jay-R",
-    groom: "Jennifer Bartolome",
-    groomNickname: "Jen",
+    bride: "Diana Grace Villorente",
+    brideNickname: "Diana Grace",
+    groom: "Mark Joey Ulzame",
+    groomNickname: "Mark Joey",
   },
   wedding: {
-    date: "January 24, 2026",
-    time: "9:30 AM",
-    venue: "Diocesan Shrine & Parish of Our Lady of the Abandoned",
+    date: "February 8, 2026",
+    time: "2:30 PM",
+    venue: "San Lorenzo Ruiz Parish Church",
     tagline: "are getting married!",
     theme: "Elegant Wedding ✨",
-    motif: "Earth Tones & Natural Elegance",
+    motif: "Autumn Theme",
   },
   details: {
     rsvp: {
-      deadline: "January 10, 2026",
+      deadline: "January 25, 2026",
       contacts: "+639XXXXXXXXX | +639XXXXXXXXX",
-      names: "Jay-R & Jen"
+      names: "Mark Joey & Diana Grace"
     },
     policies: {
       attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
@@ -27,25 +27,25 @@ export const siteConfig = {
     }
   },
   ceremony: {
-    location: "Diocesan Shrine & Parish of Our Lady of the Abandoned",
-    venue: "Diocesan Shrine & Parish of Our Lady of the Abandoned",
-    address: "#3 Mt. Kennedy St., Mountainview Village, San Roque, Marikina City",
-    date: "January 24, 2026",
-    day: "Saturday",
-    time: "9:30 AM",
-    entourageTime: "8:30 AM",
-    guestsTime: "9:00 AM",
+    location: "San Lorenzo Ruiz Parish Church",
+    venue: "San Lorenzo Ruiz Parish Church",
+    address: "Fairlane Subdivision, Tarlac City",
+    date: "February 8, 2026",
+    day: "Sunday",
+    time: "2:30 PM",
+    entourageTime: "1:30 PM",
+    guestsTime: "2:00 PM",
   },
   reception: {
-    location: "The Grand Cobo Events Place",
-    venue: "The Grand Cobo Events Place",
-    address: "#3 Mt. Kennedy St., Mountainview Village, San Roque, Marikina City",
-    date: "January 24, 2026",
-    time: "11:00 AM",
+    location: "Cz Ranch",
+    venue: "Cz Ranch",
+    address: "Capas, Tarlac",
+    date: "February 8, 2026",
+    time: "4:00 PM",
   },
   dressCode: {
     theme: "Elegant Wedding ✨",
-    colors: ["#0A3629", "#126555", "#688277", "#9F8650", "#F9F8F4"],
+    colors: ["#800A06", "#6A1F08", "#9B4719", "#FAAF38", "#EFCA93", "#EFD2AA"],
     description: "Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please.",
     sponsors: {
       ladies: "Champagne or Gold long gowns",
@@ -57,14 +57,14 @@ export const siteConfig = {
     },
     note: "Dress code: Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please."
   },
-  narrative: `Two hearts, one love story. Jay-R and Jennifer are ready to begin their forever together. \n
+  narrative: `Two hearts, one love story. Mark Joey and Diana Grace are ready to begin their forever together. \n
 
 Join us as we celebrate their love and commitment to each other on this special day. \n
 
 Together with their families, they invite you to witness the beginning of their beautiful journey as husband and wife. ❤️`,
   colors: {
-    primary: "#0A3629",
-    secondary: "#126555",
+    primary: "#800A06",
+    secondary: "#6A1F08",
   },
 }
 

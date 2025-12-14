@@ -7,26 +7,26 @@
 :root {
   /* Elegant Wedding Palette - Earth Tones & Natural Elegance */
   --background: #F9F8F4;
-  --foreground: #0A3629;
+  --foreground: #800A06;
   --card: #FFFFFF;
-  --card-foreground: #0A3629;
+  --card-foreground: #800A06;
   --popover: #FFFFFF;
-  --popover-foreground: #0A3629;
-  /* Primary: deep forest green */
-  --primary: #0A3629;
+  --popover-foreground: #800A06;
+  /* Primary: dark red */
+  --primary: #800A06;
   --primary-foreground: #F9F8F4;
-  /* Secondary: medium sage green */
-  --secondary: #126555;
+  /* Secondary: darker red */
+  --secondary: #6A1F08;
   --secondary-foreground: #F9F8F4;
-  /* Muted sage accent */
-  --muted: #688277;
-  --muted-foreground: #0A3629;
+  /* Muted autumn accent */
+  --muted: #9B4719;
+  --muted-foreground: #800A06;
   /* Accent: warm gold */
   --accent: #9F8650;
   --accent-foreground: #F9F8F4;
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: #688277;
+  --border: #9B4719;
   --input: #F9F8F4;
   --ring: #9F8650;
   --chart-1: oklch(0.646 0.222 41.116);
@@ -36,12 +36,12 @@
   --chart-5: oklch(0.769 0.188 70.08);
   --radius: 0.5rem;
   --sidebar: #F9F8F4;
-  --sidebar-foreground: #0A3629;
-  --sidebar-primary: #0A3629;
+  --sidebar-foreground: #800A06;
+  --sidebar-primary: #800A06;
   --sidebar-primary-foreground: #F9F8F4;
   --sidebar-accent: #9F8650;
   --sidebar-accent-foreground: #F9F8F4;
-  --sidebar-border: #688277;
+  --sidebar-border: #9B4719;
   --sidebar-ring: #9F8650;
 }
 
@@ -52,21 +52,21 @@
   --card-foreground: oklch(0.985 0 0);
   --popover: oklch(0.145 0 0);
   --popover-foreground: oklch(0.985 0 0);
-  --primary: #0A3629;
+  --primary: #800A06;
   --primary-foreground: oklch(0.985 0 0);
-  --secondary: #126555;
+  --secondary: #6A1F08;
   --secondary-foreground: oklch(0.985 0 0);
-  /* Sage for dark mode */
-  --sage: #126555;
+  /* Autumn for dark mode */
+  --sage: #6A1F08;
   --muted: #9F8650;
-  --muted-foreground: #0A3629;
-  --accent: #688277;
+  --muted-foreground: #800A06;
+  --accent: #9B4719;
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
   --border: oklch(0.269 0 0);
   --input: oklch(0.269 0 0);
-  --ring: #0A3629;
+  --ring: #800A06;
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
@@ -74,12 +74,12 @@
   --chart-5: oklch(0.645 0.246 16.439);
   --sidebar: oklch(0.205 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: #0A3629;
+  --sidebar-primary: #800A06;
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: #126555;
+  --sidebar-accent: #6A1F08;
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: #0A3629;
+  --sidebar-ring: #800A06;
 }
 
 @theme inline {
@@ -155,12 +155,12 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #688277 0%, #126555 100%);
+  background: linear-gradient(180deg, #9B4719 0%, #6A1F08 100%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #126555 0%, #0A3629 100%);
+  background: linear-gradient(180deg, #6A1F08 0%, #800A06 100%);
 }
 
 /* Shimmer animation for countdown cards */
@@ -228,16 +228,16 @@ html {
   font-style: normal;
 }
 
-/* Elegant Wedding Design Utilities - Earth Tones */
+/* Elegant Wedding Design Utilities - Autumn Tones */
 .elegant-gradient-bg {
-  background: linear-gradient(135deg, #F9F8F4 0%, #688277 50%, #126555 100%);
+  background: linear-gradient(135deg, #F9F8F4 0%, #9B4719 50%, #6A1F08 100%);
 }
 
 .elegant-card {
   background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(20px);
   border: 1px solid rgba(159, 134, 80, 0.2);
-  box-shadow: 0 4px 24px rgba(10, 54, 41, 0.08);
+  box-shadow: 0 4px 24px rgba(128, 10, 6, 0.08);
 }
 
 .gold-accent-border {
@@ -248,18 +248,18 @@ html {
   content: '';
   position: absolute;
   inset: -1px;
-  background: linear-gradient(135deg, #9F8650 0%, #688277 50%, #9F8650 100%);
+  background: linear-gradient(135deg, #9F8650 0%, #9B4719 50%, #9F8650 100%);
   border-radius: inherit;
   opacity: 0.3;
   z-index: -1;
 }
 
 .elegant-text-shadow {
-  text-shadow: 0 2px 8px rgba(10, 54, 41, 0.15);
+  text-shadow: 0 2px 8px rgba(128, 10, 6, 0.15);
 }
 
 .premium-shadow {
-  box-shadow: 0 8px 32px rgba(10, 54, 41, 0.12), 
+  box-shadow: 0 8px 32px rgba(128, 10, 6, 0.12), 
               0 2px 8px rgba(159, 134, 80, 0.12);
 }
 
@@ -277,9 +277,9 @@ html {
   background: linear-gradient(
     90deg,
     #9F8650 0%,
-    #688277 25%,
-    #126555 50%,
-    #688277 75%,
+    #9B4719 25%,
+    #6A1F08 50%,
+    #9B4719 75%,
     #9F8650 100%
   );
   background-size: 200% auto;

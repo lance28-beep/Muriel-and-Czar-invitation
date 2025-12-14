@@ -34,7 +34,7 @@ const BackgroundMusic = () => {
   return (
     <audio
       ref={audioRef}
-      src="/background_music/Kina Grannis ft. Imaginary Future - I Will Spend My Whole Life Loving Yous lyrics.mp3"
+      src="/background_music+/Kina Grannis ft. Imaginary Future - I Will Spend My Whole Life Loving Yous lyrics.mp3"
       loop
       preload="auto"
       playsInline
