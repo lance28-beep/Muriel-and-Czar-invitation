@@ -345,17 +345,17 @@ export function GuestList() {
           {/* Header */}
           <div className="relative z-10 text-center">
             <h2
-              className="font-[family-name:var(--font-crimson)] font-normal text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] leading-[28px] text-black mb-3 sm:mb-4 md:mb-5 uppercase"
+              className="font-[family-name:var(--font-crimson)] font-normal text-[20px] sm:text-[24px] md:text-[28px] lg:text-[32px] xl:text-[36px] leading-[28px] text-[#800A06] mb-3 sm:mb-4 md:mb-5 uppercase"
             >
               WE RESERVED SEATS FOR YOU!
             </h2>
             
-            <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-black/90 font-light max-w-2xl mx-auto leading-relaxed px-2 mb-3 sm:mb-4`}>
+            <p className={`${cormorant.className} text-sm sm:text-base md:text-lg text-[#800A06] font-light max-w-2xl mx-auto leading-relaxed px-2 mb-3 sm:mb-4`}>
               We have chosen to have a small and intimate wedding ceremony.<br />
               Only those closest to us will be in attendance.
             </p>
             
-            <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-black/85 font-medium max-w-xl mx-auto px-2 mb-4 sm:mb-5`}>
+            <p className={`${cormorant.className} text-xs sm:text-sm md:text-base text-[#800A06] font-medium max-w-xl mx-auto px-2 mb-4 sm:mb-5`}>
               Kindly confirm your presence on or before:<br />
               <span className="font-[family-name:var(--font-crimson)] font-light text-base sm:text-lg md:text-xl text-[#800A06]">January 25, 2026</span>
             </p>

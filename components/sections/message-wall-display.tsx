@@ -90,34 +90,10 @@ export default function MessageWallDisplay({ messages, loading }: MessageWallDis
     return (
       <div className="relative text-center py-8 sm:py-12 px-4 overflow-hidden">
         {/* Corner Decorations - All 4 Corners */}
-        <div className="absolute top-0 left-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-x-[-1]"
-          />
-        </div>
-        <div className="absolute top-0 right-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50"
-          />
-        </div>
-        <div className="absolute bottom-0 left-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-x-[-1] scale-y-[-1]"
-          />
-        </div>
-        <div className="absolute bottom-0 right-0 z-[1] pointer-events-none">
-          <img 
-            src="/decoration/top-right-corner-automleaves.png" 
-            alt="Autumn leaves decoration"
-            className="w-24 sm:w-32 md:w-40 lg:w-48 h-auto opacity-50 scale-y-[-1]"
-          />
-        </div>
+
+    
+    
+    
         <div className="relative z-10">
         <div className="relative inline-block mb-4 sm:mb-6">
           <div className="absolute inset-0 bg-[#800A06]/10 rounded-full blur-xl scale-150"></div>
