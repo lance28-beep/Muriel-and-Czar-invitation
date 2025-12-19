@@ -21,10 +21,10 @@ export function Countdown() {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      // Target: February 8, 2026 at 2:30 PM GMT+8
+      // Target: February 8, 2026 at 1:30 PM GMT+8
       // Compute using UTC to avoid timezone parsing inconsistencies across browsers
-      // 2:30 PM GMT+8 == 06:30 AM UTC
-      const targetDate = Date.UTC(2026, 1, 8, 6, 30, 0) // February is month 1 (0-indexed)
+      // 1:30 PM GMT+8 == 05:30 AM UTC
+      const targetDate = Date.UTC(2026, 1, 8, 5, 30, 0) // February is month 1 (0-indexed)
       const now = new Date().getTime()
       const difference = targetDate - now
 
@@ -182,7 +182,7 @@ export function Countdown() {
               
               {/* Time - Better readability */}
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide mb-3 sm:mb-4">
-                2:30 PM
+                1:30 PM
               </p>
               
               {/* Bottom decorative line */}

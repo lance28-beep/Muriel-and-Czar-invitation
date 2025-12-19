@@ -167,7 +167,7 @@ export function Footer() {
 
               {/* Time with elegant styling */}
               <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wider mb-4 sm:mb-5">
-                2:30 PM
+                1:30 PM
               </p>
 
               {/* Bottom decorative line with earth tone accent */}
@@ -208,7 +208,7 @@ export function Footer() {
                 </div>
                 <div className="flex items-center gap-3 font-[family-name:var(--font-crimson)] text-[#800A06] font-medium">
                   <MapPin className="w-5 h-5 text-[#800A06]" />
-                  <span className="text-sm sm:text-base">San Lorenzo Ruiz Parish Church & Cz Ranch</span>
+                  <span className="text-sm sm:text-base">MATER DOLOROSA Parish in Capas & Cz Ranch</span>
                 </div>
               </div>
             </div>
@@ -250,11 +250,11 @@ export function Footer() {
               <div className="space-y-3 font-[family-name:var(--font-crimson)] text-[#800A06] font-medium text-sm sm:text-base">
                 <div className="flex items-center gap-3">
                   <MapPin className="w-4 h-4 text-[#800A06]" />
-                  <span>San Lorenzo Ruiz Parish Church</span>
+                  <span>MATER DOLOROSA Parish in Capas</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-4 h-4 text-[#800A06]" />
-                  <span>2:30 PM</span>
+                  <span>1:30 PM</span>
                 </div>
               </div>
             </motion.div>

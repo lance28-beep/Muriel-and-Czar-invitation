@@ -13,7 +13,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When and where is the wedding?",
     answer:
-      "The wedding ceremony will be held on Sunday, February 8, 2026, at 2:30 PM at the San Lorenzo Ruiz Parish Church, Fairlane Subdivision, Tarlac City.\n\nThe reception will follow at 4:00 PM at Cz Ranch, Capas, Tarlac.",
+      "The wedding ceremony will be held on Sunday, February 8, 2026, at 1:30 PM at the MATER DOLOROSA Parish in Capas, Capas, Tarlac.\n\nThe reception will follow at 4:00 PM at Cz Ranch, Capas, Tarlac.",
   },
   {
     question: "What is the dress code?",
@@ -53,12 +53,12 @@ const faqItems: FAQItem[] = [
   {
     question: "How do I get to the venue?",
     answer:
-      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to both the ceremony (San Lorenzo Ruiz Parish Church) and reception (Cz Ranch) venues. The ceremony is located at Fairlane Subdivision, Tarlac City, and the reception is at Capas, Tarlac.",
+      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to both the ceremony (MATER DOLOROSA Parish in Capas) and reception (Cz Ranch) venues. Both the ceremony and reception are located in Capas, Tarlac.",
   },
   {
     question: "Is there parking available?",
     answer:
-      "Yes! Both the ceremony and reception venues have parking facilities. We recommend arriving 15-20 minutes early to secure a spot and get settled comfortably. For the ceremony, guests should arrive by 2:00 PM.",
+      "Yes! Both the ceremony and reception venues have parking facilities. We recommend arriving 15-20 minutes early to secure a spot and get settled comfortably. For the ceremony, guests should arrive by 1:00 PM.",
   },
   {
     question: "What should I do if I need to cancel or update my RSVP?",

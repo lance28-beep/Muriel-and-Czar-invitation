@@ -6,11 +6,11 @@ import { Section } from "@/components/section"
 // Removed circular gallery in favor of a responsive masonry layout
 
 const galleryItems = [
-  { image: "/mobile-background/couple (3).jpg", text: " " },   
-  { image: "/mobile-background/couple (18).jpg", text: " " },
-  { image: "/mobile-background/couple (22).jpg", text: " " },
-
-
+  { image: "/gallery/couple (1).jpeg", text: " " },   
+  { image: "/gallery/couple (2).jpeg", text: " " },
+  { image: "/gallery/couple (3).jpeg", text: " " },
+  { image: "/gallery/couple (4).jpeg", text: " " },
+  { image: "/gallery/couple (5).jpeg", text: " " },
 ]
 
 export function Gallery() {
@@ -90,22 +90,23 @@ export function Gallery() {
   return (
     <Section
       id="gallery"
-      className="relative bg-gradient-to-b from-[#0A3428] via-[#106552]/90 to-[#0A3428] py-12 sm:py-16 md:py-20 lg:py-24 overflow-hidden"
+      className="relative py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden"
     >
-      {/* Subtle background elements */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden">
-        {/* Soft gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#C3A161]/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#C3A161]/5 to-transparent" />
-      </div>
+      {/* Semi-transparent overlay for better text readability */}
+      <div className="absolute inset-0 bg-[#EFCA93] backdrop-blur-sm pointer-events-none" />
 
       {/* Header */}
-      <div className="relative z-10 text-center mb-10 sm:mb-12 md:mb-16 px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-[#FFFFFF] mb-4 sm:mb-6 drop-shadow-md">
+      <div className="relative z-10 text-center mb-12 sm:mb-16 md:mb-20 px-4 sm:px-6">
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
+        </div>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] mb-6 sm:mb-8 uppercase tracking-[0.12em] sm:tracking-[0.15em] elegant-text-shadow">
           Our Moments
         </h2>
-        
-        <p className="text-sm sm:text-base md:text-lg text-[#FFFFFF]/90 font-light max-w-xl mx-auto leading-relaxed">
+        <div className="flex items-center justify-center gap-3 mb-6">
+          <div className="h-[1px] w-16 sm:w-24 bg-gradient-to-r from-transparent via-[#9F8650] to-transparent" />
+        </div>
+        <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-4">
           Every moment, a treasured memory made eternal
         </p>
       </div>
@@ -116,15 +117,15 @@ export function Gallery() {
           <div className="max-w-6xl w-full">
             {isLoading ? (
               <div className="flex items-center justify-center h-64 sm:h-80 md:h-96">
-                <div className="w-12 h-12 border-[3px] border-[#C3A161]/30 border-t-[#C3A161] rounded-full animate-spin" />
+                <div className="w-12 h-12 border-[3px] border-[#9F8650]/30 border-t-[#9F8650] rounded-full animate-spin" />
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
                 {galleryItems.map((item, index) => (
                   <button
                     key={item.image + index}
                     type="button"
-                    className="group relative w-full overflow-hidden rounded-lg sm:rounded-xl bg-white/5 backdrop-blur-sm border border-[#C3A161]/20 shadow-lg hover:shadow-xl hover:border-[#C3A161]/40 transition-all duration-300"
+                    className="group relative w-full overflow-hidden rounded-lg sm:rounded-xl bg-white/80 backdrop-blur-sm border border-[#9F8650]/30 shadow-lg hover:shadow-xl hover:border-[#9F8650]/50 transition-all duration-300"
                     onClick={() => {
                       setSelectedImage(item)
                       setCurrentIndex(index)
@@ -132,7 +133,7 @@ export function Gallery() {
                     aria-label={`Open image ${index + 1}`}
                   >
                     {/* Subtle glow on hover */}
-                    <div className="absolute -inset-0.5 bg-gradient-to-br from-[#C3A161]/20 to-[#751A2C]/10 rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+                    <div className="absolute -inset-0.5 bg-gradient-to-br from-[#9F8650]/20 to-[#800A06]/10 rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
                     
                     <div className="relative aspect-[3/4] md:aspect-square overflow-hidden">
                       <img
@@ -140,7 +141,7 @@ export function Gallery() {
                         alt={item.text || `Gallery image ${index + 1}`}
                         loading="lazy"
                         decoding="async"
-                        sizes="(min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, (min-width: 640px) 50vw, 100vw"
                         className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                       {/* Gradient overlay on hover */}
@@ -148,7 +149,7 @@ export function Gallery() {
                     </div>
                     
                     {/* Image counter badge */}
-                    <div className="absolute top-2 right-2 bg-black/40 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div className="absolute top-2 right-2 bg-[#800A06]/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                       <span className="text-xs font-medium text-white">
                         {index + 1}/{galleryItems.length}
                       </span>
@@ -226,8 +227,8 @@ export function Gallery() {
             {/* Top bar with counter and close */}
             <div className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between p-4 sm:p-6">
               {/* Image counter */}
-              <div className="bg-black/40 backdrop-blur-md rounded-full px-4 py-2 border border-[#C3A161]/40">
-                <span className="text-sm sm:text-base font-medium text-[#C3A161]">
+              <div className="bg-black/40 backdrop-blur-md rounded-full px-4 py-2 border border-[#9F8650]/40">
+                <span className="text-sm sm:text-base font-medium text-[#9F8650]">
                   {currentIndex + 1} / {galleryItems.length}
                 </span>
               </div>
@@ -317,37 +318,6 @@ export function Gallery() {
           </div>
         </div>
       )}
-      {/* View more button */}
-      <div className="relative z-10 mt-10 sm:mt-12 md:mt-16 flex justify-center px-4">
-        <a
-          href="/gallery"
-          className="group inline-flex items-center gap-2 px-6 sm:px-8 md:px-10 lg:px-12 py-3 sm:py-3.5 md:py-4 rounded-lg sm:rounded-xl font-semibold sm:font-bold transition-all duration-300 uppercase tracking-wider text-xs sm:text-sm md:text-base whitespace-nowrap relative overflow-hidden border-2 backdrop-blur-sm"
-          style={{
-            backgroundColor: "rgba(117, 26, 44, 0.95)",
-            borderColor: "rgba(195, 161, 97, 0.4)",
-            color: "#FFFFFF",
-            boxShadow: "0 4px 20px rgba(117, 26, 44, 0.4), 0 2px 6px rgba(0,0,0,0.3)",
-          }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.backgroundColor = "#751A2C";
-            e.currentTarget.style.borderColor = "rgba(195, 161, 97, 0.7)";
-            e.currentTarget.style.transform = "translateY(-2px)";
-            e.currentTarget.style.boxShadow = "0 8px 30px rgba(117, 26, 44, 0.6), 0 4px 12px rgba(0,0,0,0.4)";
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.backgroundColor = "rgba(117, 26, 44, 0.95)";
-            e.currentTarget.style.borderColor = "rgba(195, 161, 97, 0.4)";
-            e.currentTarget.style.transform = "translateY(0)";
-            e.currentTarget.style.boxShadow = "0 4px 20px rgba(117, 26, 44, 0.4), 0 2px 6px rgba(0,0,0,0.3)";
-          }}
-        >
-          <span className="relative z-10">View Full Gallery</span>
-          <ChevronRight size={16} className="sm:w-5 sm:h-5 relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
-          <div 
-            className="absolute inset-0 bg-gradient-to-r from-transparent via-[#C3A161]/30 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-700 transform -skew-x-12 -translate-x-full group-hover:translate-x-full"
-          />
-        </a>
-      </div>
     </Section>
   )
 }

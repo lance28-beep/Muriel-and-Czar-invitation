@@ -6,8 +6,8 @@ import { Heart } from "lucide-react"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
-  const ceremonyVenue = "San Lorenzo Ruiz Parish Church"
-  const ceremonyAddress = "Fairlane Subdivision, Tarlac City"
+  const ceremonyVenue = "MATER DOLOROSA Parish in Capas"
+  const ceremonyAddress = "Capas, Tarlac"
   const receptionVenue = "Cz Ranch"
   const receptionAddress = "Capas, Tarlac"
 
@@ -114,7 +114,7 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 text-[#9B4719]">
               <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">SUNDAY</span>
               <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light my-2 sm:my-0 elegant-text-shadow">8</span>
-              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">2:30 PM</span>
+              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#9F8650]">1:30 PM</span>
             </div>
             
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-light text-[#9B4719]">

@@ -113,7 +113,7 @@ export function Registry() {
                       </div>
                       <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white rounded-xl p-3 sm:p-4 shadow-lg border-2 border-[#800A06]/20">
                         <Image
-                          src="/QR/QR.png"
+                          src="/QR/newQR.png"
                           alt="QR Code"
                           fill
                           className="object-contain rounded-lg"

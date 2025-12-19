@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Great_Vibes, Inter, Imperial_Script, Cinzel, Crimson_Text, Ephesis } from "next/font/google"
+import { Great_Vibes, Inter, Imperial_Script, Cinzel, Crimson_Text, Ephesis, Anton } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
 import { siteConfig } from "@/content/site"
@@ -63,6 +63,7 @@ const imperialScript = Imperial_Script({ subsets: ["latin"], weight: "400", vari
 const cinzel = Cinzel({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-cinzel" })
 const crimsonText = Crimson_Text({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--font-crimson" })
 const ephesis = Ephesis({ subsets: ["latin"], weight: "400", variable: "--font-ephesis" })
+const anton = Anton({ subsets: ["latin"], weight: "400", variable: "--font-anton" })
 
 export const metadata: Metadata = {
   metadataBase: new URL(canonicalUrl),
@@ -178,7 +179,7 @@ export default function RootLayout({
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       </head>
       <body
-        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} ${crimsonText.variable} ${ephesis.variable} font-inter antialiased text-foreground`}
+        className={`${inter.variable} ${greatVibes.variable} ${imperialScript.variable} ${cinzel.variable} ${crimsonText.variable} ${ephesis.variable} ${anton.variable} font-inter antialiased text-foreground`}
       >
         {children}
         <Analytics />

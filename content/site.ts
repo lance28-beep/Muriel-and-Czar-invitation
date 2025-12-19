@@ -7,8 +7,8 @@ export const siteConfig = {
   },
   wedding: {
     date: "February 8, 2026",
-    time: "2:30 PM",
-    venue: "San Lorenzo Ruiz Parish Church",
+    time: "1:30 PM",
+    venue: "MATER DOLOROSA Parish in Capas",
     tagline: "are getting married!",
     theme: "Elegant Wedding ✨",
     motif: "Autumn Theme",
@@ -27,14 +27,14 @@ export const siteConfig = {
     }
   },
   ceremony: {
-    location: "San Lorenzo Ruiz Parish Church",
-    venue: "San Lorenzo Ruiz Parish Church",
-    address: "Fairlane Subdivision, Tarlac City",
+    location: "MATER DOLOROSA Parish in Capas",
+    venue: "MATER DOLOROSA Parish in Capas",
+    address: "Capas, Tarlac",
     date: "February 8, 2026",
     day: "Sunday",
-    time: "2:30 PM",
-    entourageTime: "1:30 PM",
-    guestsTime: "2:00 PM",
+    time: "1:30 PM",
+    entourageTime: "12:30 PM",
+    guestsTime: "1:00 PM",
   },
   reception: {
     location: "Cz Ranch",

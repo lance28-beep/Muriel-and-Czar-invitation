@@ -26,9 +26,9 @@ export function Details() {
   }
 
   // Updated venue information
-  const ceremonyVenueName = "San Lorenzo Ruiz Parish Church"
+  const ceremonyVenueName = "MATER DOLOROSA Parish in Capas"
   const ceremonyVenueDetail = ""
-  const ceremonyAddress = "Fairlane Subdivision, Tarlac City"
+  const ceremonyAddress = "Capas, Tarlac"
   const ceremonyVenue = `${ceremonyVenueName}, ${ceremonyAddress}`
   const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(ceremonyVenue)}`
 
@@ -77,8 +77,8 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 overflow-hidden">
               <Image
-                src="/Details/San Lorenzo Ruiz Parish Church.jpg"
-                alt="San Lorenzo Ruiz Parish Church"
+                src="/Details/MATER%20DOLOROSA%20Parish%20in%20Capas.JPG"
+                alt="MATER DOLOROSA Parish in Capas"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 1280px"
@@ -92,10 +92,10 @@ export function Details() {
                   Ceremony
                 </p>
                 <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-normal text-white mb-0.5 sm:mb-1 drop-shadow-lg uppercase tracking-[0.1em] leading-tight">
-                  San Lorenzo Ruiz
+                  MATER DOLOROSA
                 </h3>
                 <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-white/95 drop-shadow-md tracking-wide">
-                  Parish Church
+                  Parish in Capas
                 </p>
               </div>
             </div>
@@ -136,7 +136,7 @@ export function Details() {
 
                 {/* Time */}
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
-                  2:30 PM
+                  1:30 PM
                 </p>
               </div>
 
@@ -216,7 +216,7 @@ export function Details() {
             {/* Venue Image */}
             <div className="relative w-full h-48 sm:h-56 md:h-64 lg:h-72 xl:h-80 overflow-hidden">
               <Image
-                src="/Details/Cz Ranch.jpg"
+                src="/Details/Cz%20Ranch.jpg"
                 alt="Cz Ranch"
                 fill
                 className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -412,10 +412,10 @@ export function Details() {
               {/* Sponsors Dress Code Text */}
               <div className="text-center">
                 <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed mb-4">
-                  <span className="font-semibold">Ninangs:</span> Champagne or Gold long gowns
+                  <span className="font-semibold">Ninangs:</span> Long gowns in autumn tones or any color from our palette
                 </p>
                 <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
-                  <span className="font-semibold">Ninongs:</span> Barong Tagalog & Black Slacks
+                  <span className="font-semibold">Ninongs:</span> Barong Tagalog with black slacks, or formal suits in black or palette colors
                 </p>
               </div>
             </div>
