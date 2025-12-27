@@ -18,7 +18,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What is the dress code?",
     answer:
-      "Guest Attire:\n• Ladies: Long gowns in earth tones (no prints, please)\n• Gentlemen: Barong Tagalog & black slacks or formal wear\n\nPrincipal Sponsors:\n• Ninangs: Champagne or Gold long gowns\n• Ninongs: Barong Tagalog & Black Slacks\n\nPlease adhere to the dress code to maintain the elegance of our celebration. We recommend earth tones and natural colors that match our wedding theme.",
+      "Guest Attire:\n• Ladies: Long gowns in earth tones (no prints, please)\n• Gentlemen: Barong Tagalog & black slacks or formal wear\n\nPrincipal Sponsors:\n• Ninangs: Long gowns in autumn tones or any color from our palette\n• Ninongs: Barong Tagalog with black slacks, or formal suits in black or palette colors\n\nPlease adhere to the dress code to maintain the elegance of our celebration. We recommend earth tones and natural colors that match our wedding theme.",
   },
   {
     question: "When is the RSVP deadline?",
