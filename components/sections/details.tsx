@@ -348,7 +348,7 @@ export function Details() {
               {/* Guest Dress Code Text */}
               <div className="text-center mb-7 sm:mb-8 md:mb-10">
                 <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed mb-4">
-                  <span className="font-semibold">Ladies:</span> Long gowns in earth tones (no prints, please)
+                  <span className="font-semibold">Ladies:</span> Long gowns in earth tones 
                 </p>
                 <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#800A06] leading-relaxed">
                   <span className="font-semibold">Gentlemen:</span> Barong Tagalog & black slacks or formal wear
@@ -394,7 +394,7 @@ export function Details() {
                   </div>
                 </div>
                 <p className="mt-5 text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] text-[#800A06]/80 leading-relaxed">
-                  We kindly request guests to wear autumn tones. Please avoid printed outfits.
+                  We kindly request guests to wear autumn tones. 
                 </p>
               </div>
             </div>
