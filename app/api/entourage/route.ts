@@ -1,7 +1,7 @@
 import { type NextRequest, NextResponse } from "next/server"
 
 // Replace this with your Entourage Google Apps Script URL
-const ENTOURAGE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyoZ1qJHa6ifYHdTc-sW6mZz20W441K_kXaNU3gDTE62pewvsCFMDq1Pu1-U-a67E4f1Q/exec'
+const ENTOURAGE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzqJtnTAGI-6oZ0DcTA884Ov3QTMFVopsSIYNlSsM5fRnBkijykJjgYSCawkU3k8kSA/exec'
 
 // Entourage interface
 export interface Entourage {

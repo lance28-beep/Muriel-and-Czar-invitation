@@ -12,7 +12,6 @@ const galleryItems = [
   { image: "/gallery/couple (17).webp", text: " " },
   { image: "/gallery/couple (16).webp", text: " " },
   { image: "/gallery/couple (7).webp", text: " " },
-  { image: "/gallery/couple (1).webp", text: " " },
 ]
 
 export function Gallery() {

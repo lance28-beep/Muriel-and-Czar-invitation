@@ -101,17 +101,17 @@ export default function MessageWallDisplay({ messages, loading }: MessageWallDis
             <MessageCircle className="h-5 w-5 sm:h-6 sm:w-6 text-white" />
           </div>
         </div>
-        <h3 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-normal text-[#434F39] mb-2 sm:mb-3 uppercase tracking-wider">
+        <h3 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-normal text-white mb-2 sm:mb-3 uppercase tracking-wider">
           No Messages Yet
         </h3>
-        <p className="text-xs sm:text-sm md:text-base text-[#434F39]/80 font-[family-name:var(--font-crimson)] font-light max-w-md mx-auto leading-relaxed tracking-wide">
+        <p className="text-xs sm:text-sm md:text-base text-white font-[family-name:var(--font-crimson)] font-light max-w-md mx-auto leading-relaxed tracking-wide">
           Be the first to share your heartfelt wishes for the happy couple!
         </p>
         <div className="mt-4 sm:mt-6 flex justify-center">
           <div className="flex items-center gap-1.5 sm:gap-2">
-            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#434F39]" />
-            <span className="text-[10px] sm:text-xs font-[family-name:var(--font-crimson)] text-[#434F39]">Your message will appear here</span>
-            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-[#434F39]" />
+            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-white" />
+            <span className="text-[10px] sm:text-xs font-[family-name:var(--font-crimson)] text-white">Your message will appear here</span>
+            <Sparkles className="h-3 w-3 sm:h-3.5 sm:w-3.5 text-white" />
           </div>
         </div>
         </div>
