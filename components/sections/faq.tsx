@@ -38,7 +38,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What is your gift policy?",
     answer:
-      "Your presence is the greatest gift of all. But if you wish to bless us further, a monetary gift will help us start our new life together. Note: Money gifts can also be given in person. If you wish to send a monetary gift, you can scan the GCash QR code in our Gift Registry section.",
+      "Your presence is the greatest gift of all. But if you wish to bless us further, a monetary gift will help us start our new life together. Note: Money gifts can also be given in person. If you wish to send a monetary gift, you can scan the BDO Bank QR code in our Gift Registry section.",
   },
   {
     question: "Can I take photos during the ceremony?",
