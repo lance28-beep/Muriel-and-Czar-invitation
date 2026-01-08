@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 import sharp from "sharp";
 
-const IMAGES_DIR = path.resolve(process.cwd(), "public", "Couple_img");
+const IMAGES_DIR = path.resolve(process.cwd(), "public", "gallery");
 
 const VALID_INPUT_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".JPG", ".JPEG", ".PNG"]);
 

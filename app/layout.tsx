@@ -7,8 +7,8 @@ import { siteConfig } from "@/content/site"
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://mark-and-diana-wedding-invitation.netlify.app/"
 const canonicalUrl = siteUrl.replace(/\/$/, "")
-const desktopHero = "/Details/LinkPreview.jpg"
-const mobileHero = "/Details/LinkPreview.jpg"
+const desktopHero = "/Details/LinkPreviewNew.jpg"
+const mobileHero = "/Details/LinkPreviewNew.jpg"
 const eventImageUrl = `${canonicalUrl}${desktopHero}`
 
 const coupleNames = `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname}`
@@ -19,8 +19,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Event",
   name: `${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} Wedding`,
-  startDate: "2026-03-06T14:00:00+08:00",
-  endDate: "2026-03-06T22:00:00+08:00",
+  startDate: "2026-05-29T15:00:00+08:00",
+  endDate: "2026-05-29T22:00:00+08:00",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: [
@@ -54,7 +54,7 @@ const jsonLd = {
     "@type": "Person",
     name: coupleNames,
   },
-  eventHashtag: `#${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`,
+  eventHashtag: `#MurielAndCzar`,
 }
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -72,8 +72,8 @@ export const metadata: Metadata = {
     template: `%s | ${coupleNames}`,
   },
   description: eventDescription,
-  keywords:
-    `${siteConfig.couple.groomNickname} ${siteConfig.couple.brideNickname} wedding, ${siteConfig.ceremony.venue} wedding, ${siteConfig.reception.venue} wedding, wedding invitation, RSVP, wedding gallery, message wall, love story, #${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`,
+    keywords:
+    `${siteConfig.couple.groomNickname} ${siteConfig.couple.brideNickname} wedding, ${siteConfig.ceremony.venue} wedding, ${siteConfig.reception.venue} wedding, wedding invitation, RSVP, wedding gallery, message wall, love story, #MurielAndCzar`,
   applicationName: `${coupleNames} Wedding Invitation`,
   authors: [
     { name: siteConfig.couple.groomNickname },
@@ -133,7 +133,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${coupleNames} Wedding Invitation`,
     description:
-      `You're invited to the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} on ${siteConfig.wedding.date}. RSVP, explore their story, and get all the details for the big day! #${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}SayIDo`,
+      `You're invited to the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} on ${siteConfig.wedding.date}. RSVP, explore their story, and get all the details for the big day! #MurielAndCzar`,
     images: [eventImageUrl],
     creator: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,
     site: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,

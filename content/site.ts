@@ -1,70 +1,92 @@
 export const siteConfig = {
   couple: {
-    bride: "Diana Grace Villorente",
-    brideNickname: "Diana Grace",
-    groom: "Mark Joey Ulzame",
-    groomNickname: "Mark Joey",
+    bride: "Muriel Anne B. Alberto",
+    brideNickname: "Muriel",
+    groom: "Czar Alvin P. Carpo",
+    groomNickname: "Czar",
   },
   wedding: {
-    date: "February 8, 2026",
-    time: "1:30 PM",
-    venue: "MATER DOLOROSA Parish in Capas",
+    date: "May 29, 2026",
+    time: "3:00 PM",
+    venue: "Buddy-One Camp, Tuba, Benguet",
     tagline: "are getting married!",
-    theme: "Elegant Wedding ✨",
-    motif: "Autumn Theme",
+    theme: "Rustic Countryside",
+    motif: "Rustic Countryside",
   },
   details: {
     rsvp: {
-      deadline: "January 25, 2026",
+      deadline: "November 15, 2025",
       contacts: "+639XXXXXXXXX | +639XXXXXXXXX",
-      names: "Mark Joey & Diana Grace"
+      names: "Muriel & Czar"
     },
     policies: {
       attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
-      gifts: "We kindly ask for no boxed gifts. Monetary gifts are welcome but never expected.",
+      gifts: "Your presence is the greatest gift of all. But if you wish to bless us further, a monetary gift will help us start our new life together. Note: Money gifts can also be given in person.",
       children: "We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)",
       photos: "We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories"
     }
   },
   ceremony: {
-    location: "MATER DOLOROSA Parish in Capas",
-    venue: "MATER DOLOROSA Parish in Capas",
-    address: "Capas, Tarlac",
-    date: "February 8, 2026",
-    day: "Sunday",
-    time: "1:30 PM",
-    entourageTime: "12:30 PM",
-    guestsTime: "1:00 PM",
+    location: "Buddy-One Camp",
+    venue: "Buddy-One Camp",
+    address: "Tuba, Benguet",
+    date: "May 29, 2026",
+    day: "Friday",
+    time: "3:00 PM",
+    entourageTime: "2:00 PM",
+    guestsTime: "2:30 PM",
   },
   reception: {
-    location: "Cz Ranch",
-    venue: "Cz Ranch",
-    address: "Capas, Tarlac",
-    date: "February 8, 2026",
-    time: "4:00 PM",
+    location: "Buddy-One Camp",
+    venue: "Buddy-One Camp",
+    address: "Tuba, Benguet",
+    date: "May 29, 2026",
+    time: "3:00 PM",
   },
   dressCode: {
-    theme: "Elegant Wedding ✨",
-    colors: ["#800A06", "#6A1F08", "#9B4719", "#FAAF38", "#EFCA93", "#EFD2AA"],
-    description: "Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please.",
+    theme: "Rustic Countryside",
+    colors: ["#C85A3A", "#D2691E", "#FF8C42", "#E3BC9A", "#D2B48C", "#C19A6B"],
+    description: "A warm, romantic mix of earthy tones, soft neutrals, and organic textures inspired by the simplicity and charm of the countryside. Colors: Rustic Color, Terracotta, Orange, Nude, Light Brown.",
     sponsors: {
-      ladies: "Champagne or Gold long gowns",
-      gentlemen: "Barong Tagalog & Black Slacks"
+      ladies: "Long Gown in Beige, Mocha, or Muted Rose tones",
+      gentlemen: "Formal Barong Tagalog"
     },
     guests: {
-      ladies: "Earth tones long gowns (no prints)",
-      gentlemen: "Barong & black slacks or formal wear"
+      ladies: "Dress in any earth tones of the theme colors (avoid white or ivory)",
+      gentlemen: "Long-sleeve polo in neutral or earth tones"
     },
-    note: "Dress code: Earth tones, long gowns for ladies. Barong & black slacks or formal wear for gentlemen. No prints, please."
+    note: "Theme: Rustic Countryside - A warm, romantic mix of earthy tones, soft neutrals, and organic textures. Color Palette: Rustic Color, Terracotta, Orange, Nude, Light Brown."
   },
-  narrative: `Two hearts, one love story. Mark Joey and Diana Grace are ready to begin their forever together. \n
-
-Join us as we celebrate their love and commitment to each other on this special day. \n
-
-Together with their families, they invite you to witness the beginning of their beautiful journey as husband and wife. ❤️`,
+  narrative: `Czar Alvin and Muriel Anne first crossed paths in 2014 during a college graduation
+celebration held at the home of Christine—Czar’s friend and Muriel’s cousin. That day was
+simple and fleeting, filled with nothing more than shy smiles and a polite “hi” and “hello.”
+Little did they know, it was the quiet beginning of a story that would unfold years later.
+In 2015, plans were made for them to meet again, with Christine happily trying to play
+matchmaker. Time, however, had other plans. The meeting never happened, and despite
+Christine’s playful teasing and encouragement, Muriel remained reserved, letting destiny
+take its time. \n
+Nearly nine years passed. \n
+Then, on a bright and sunny day in February 2023, everything changed. Christine casually
+called Czar and asked how he was doing. Before ending the call, she gave him a number
+and told him to message it. What Czar didn’t know was that the number belonged to Muriel.
+With a simple “hi” and “hello,” their long-awaited connection finally began.
+From that moment on, conversations flowed effortlessly. Text messages turned into late-night
+calls, and calls turned into video chats filled with laughter, stories, and growing affection.
+Comfort slowly blossomed into something deeper and more meaningful. \n
+Their first official meeting—and first date since reconnecting—happened on March 18, 2023.
+From that day on, everything felt different—natural, genuine, and right. On April 1, 2023,
+their bond became official. And On May 27, 2023, Muriel’s birthday It was a day that
+confirmed what their hearts already knew: this was something special. \n
+As time went on, Czar and Muriel spent the next two and a half years nurturing their
+relationship, keeping the spark alive through love, care, patience, and mutual respect.
+Distance never weakened their bond, even when Czar began working abroad. Instead, it
+strengthened their commitment and their dreams for the future. \n
+With hearts full of hope and love, they now look forward to 2026—the year they plan to tie
+the knot, celebrate their journey, and begin a new chapter together as husband and wife,
+ready to build a happy family grounded in love that waited patiently, but arrived right on time.`,
   colors: {
-    primary: "#800A06",
-    secondary: "#6A1F08",
+    primary: "#C85A3A",
+    secondary: "#D2691E",
   },
 }
 

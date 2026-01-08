@@ -34,7 +34,7 @@ const BackgroundMusic = () => {
   return (
     <audio
       ref={audioRef}
-      src="/background_music/Soultones - As It Was (Harry Styles Cover).mp3"
+      src="/background_music/PALAGI -  LYRICS.mp3"
       loop
       preload="auto"
       playsInline

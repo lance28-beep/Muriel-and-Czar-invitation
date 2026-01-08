@@ -21,64 +21,44 @@ async function getImagesFrom(dir: string) {
 }
 
 export default async function GalleryPage() {
-  const [desktop, mobile] = await Promise.all([
-    getImagesFrom("desktop-background"),
-    getImagesFrom("mobile-background"),
-  ])
-  const images = [
-    ...desktop.map((src) => ({ src, category: "desktop" as const })),
-    ...mobile.map((src) => ({ src, category: "mobile" as const })),
-  ]
+  const galleryImages = await getImagesFrom("gallery")
+  const images = galleryImages.map((src) => ({ src, category: "gallery" as const }))
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#0A3428] via-[#106552]/90 to-[#0A3428] relative overflow-hidden">
-      {/* Subtle background elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        {/* Soft gradient overlays */}
-        <div className="absolute top-0 left-0 w-full h-1/3 bg-gradient-to-b from-[#C3A161]/5 to-transparent" />
-        <div className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-[#C3A161]/5 to-transparent" />
-      </div>
-
-      <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-        <div className="text-center mb-10 sm:mb-12">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-[#FFFFFF] mb-3 sm:mb-4 drop-shadow-md">
+    <main className="min-h-screen bg-[#BDCBCB] relative overflow-hidden">
+      <section className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+        <div className="text-center mb-8 sm:mb-12">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#434F39] to-transparent" />
+          </div>
+          <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#434F39] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
             Gallery
           </h1>
-          <p className="mt-3 text-[#FFFFFF]/90 font-sans font-light text-sm sm:text-base md:text-lg">A collection from our favorite moments</p>
-          <div className="mx-auto mt-4 h-px w-24 bg-gradient-to-r from-transparent via-[#C3A161]/60 to-transparent" />
+          <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
+            <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#434F39] to-transparent" />
+          </div>
+          <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#434F39]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
+            A collection from our favorite moments
+          </p>
         </div>
 
         {images.length === 0 ? (
-          <div className="text-center text-[#FFFFFF]/80">
-            <p>No images found. Add files to <code className="px-2 py-1 bg-white/10 rounded border border-[#C3A161]/30 text-[#FFFFFF]/90">public/desktop-background</code> or <code className="px-2 py-1 bg-white/10 rounded border border-[#C3A161]/30 text-[#FFFFFF]/90">public/mobile-background</code>.</p>
+          <div className="text-center text-[#434F39]/80">
+            <p className="text-sm sm:text-base font-[family-name:var(--font-crimson)]">No images found. Add files to <code className="px-2 py-1 bg-white/80 rounded border border-[#434F39]/30 text-[#434F39]">public/gallery</code>.</p>
           </div>
         ) : (
           <MasonryGallery images={images} />
         )}
 
-        {/* CTA Section */}
-        <div className="mt-12 sm:mt-16 md:mt-20 text-center">
-          <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-6 sm:p-8 md:p-10 border border-[#C3A161]/30 max-w-2xl mx-auto">
-            <div className="inline-flex items-center justify-center gap-2 px-4 py-2 bg-[#C3A161]/20 border border-[#C3A161]/40 rounded-full text-[#C3A161] font-sans font-medium text-sm sm:text-base mb-6">
-              <span>📸</span>
-              <span>Upload Photo Coming Soon</span>
-            </div>
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-[#FFFFFF] mb-4">
-              Share Your Moments
-            </h2>
-            <p className="text-[#FFFFFF]/90 font-sans font-light text-sm sm:text-base md:text-lg mb-6 leading-relaxed">
-              Be ready to share photos and they'll appear here! Use our wedding hashtags to share your photos and be featured in our gallery.
-            </p>
-            <div className="flex flex-wrap items-center justify-center gap-3 mb-6">
-              <span className="px-4 py-2 bg-[#C3A161]/20 border border-[#C3A161]/40 rounded-full text-[#C3A161] font-sans font-medium text-sm sm:text-base">
-                #AnJENaAngForeverNiJAYR
-              </span>
-            </div>
+        {/* CTA Section - Compact */}
+        <div className="mt-8 sm:mt-12 md:mt-16 text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <Link
-              href="/#snap-share"
-              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-gradient-to-r from-[#C3A161] to-[#C3A161]/90 text-[#0A3428] font-semibold rounded-full border border-[#C3A161] hover:from-[#C3A161]/90 hover:to-[#C3A161] hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl font-sans"
+              href="/#gallery"
+              className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 md:px-12 lg:px-14 py-3 sm:py-3.5 md:py-4 lg:py-4.5 font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base md:text-lg text-[#434F39] bg-white hover:bg-[#E6ECE6] transition-all duration-300 tracking-wider uppercase border-2 border-[#434F39] hover:border-[#434F39]/80 hover:scale-105 hover:shadow-[0_10px_30px_rgba(67,79,57,0.25)] hover:brightness-105 active:scale-100 premium-shadow rounded-sm relative overflow-hidden group"
             >
-              Learn More About Sharing
+              <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></span>
+              <span className="relative z-10">Back to Gallery Section</span>
             </Link>
           </div>
         </div>

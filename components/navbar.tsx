@@ -88,8 +88,8 @@ export function Navbar() {
     <nav
       className={`sticky top-0 z-50 transition-all duration-500 ease-out ${
         isScrolled
-          ? "bg-[#FAAF38]/95 backdrop-blur-xl shadow-sm border-b border-[#6A1F08]/30 premium-shadow"
-          : "bg-[#FAAF38]/85 backdrop-blur-lg border-b border-[#6A1F08]/20"
+          ? "bg-[#434F39]/95 backdrop-blur-xl shadow-sm border-b border-[#434F39]/30 premium-shadow"
+          : "bg-[#434F39]/85 backdrop-blur-lg border-b border-[#434F39]/20"
       }`}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative">
@@ -99,17 +99,17 @@ export function Navbar() {
               {/* Monogram Image */}
               <div className="relative w-9 h-9 sm:w-10 sm:h-10 flex-shrink-0 group-hover:scale-105 transition-all duration-300">
                 <Image
-                  src="/monogram/monogram-new.png"
-                  alt="Mark Joey & Diana Grace Monogram"
+                  src="/monogram/monogramNew2.png"
+                  alt="Muriel & Czar Monogram"
                   fill
-                  className="object-contain"
+                  className="object-contain brightness-0 invert"
                   priority
                 />
               </div>
 
               {/* Names with accent color on hover */}
-              <div className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-[#6A1F08]/80 transition-all duration-300 tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-[#6A1F08] uppercase whitespace-nowrap">
-                Mark & Diana
+              <div className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-white/80 transition-all duration-300 tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-white uppercase whitespace-nowrap">
+                {siteConfig.couple.brideNickname} & {siteConfig.couple.groomNickname}
               </div>
             </div>
           </Link>
@@ -123,13 +123,13 @@ export function Navbar() {
                   href={link.href}
                   className={`px-3 lg:px-4 py-1.5 text-xs lg:text-sm font-[family-name:var(--font-crimson)] font-normal tracking-wide transition-all duration-300 relative group ${
                     isActive
-                      ? "text-[#6A1F08]"
-                      : "text-[#6A1F08]/80 hover:text-[#6A1F08]"
+                      ? "text-white"
+                      : "text-white/80 hover:text-white"
                   }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 h-[1.5px] bg-gradient-to-r from-[#6A1F08] to-[#6A1F08]/80 transition-all duration-300 ${
+                    className={`absolute bottom-0 left-0 h-[1.5px] bg-gradient-to-r from-white to-white/80 transition-all duration-300 ${
                       isActive ? "w-full" : "w-0 group-hover:w-full"
                     }`}
                   />
@@ -145,8 +145,8 @@ export function Navbar() {
               socialItems={[]}
               displaySocials={false}
               displayItemNumbering={true}
-              menuButtonColor="#6A1F08"
-              openMenuButtonColor="#6A1F08"
+              menuButtonColor="#FFFFFF"
+              openMenuButtonColor="#FFFFFF"
               changeMenuColorOnOpen={true}
               colors={["#F9F8F4", "#800A06", "#6A1F08", "#F9F8F4", "#9F8650"]}
               accentColor="#F9F8F4"
