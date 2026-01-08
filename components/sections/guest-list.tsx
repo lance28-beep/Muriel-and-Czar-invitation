@@ -71,10 +71,9 @@ export function GuestList() {
   }, [])
 
   // Filter guests based on search query
-  // Strict sequence matching: only show suggestions after 4 characters
-  // Must match from the start of the name (not substring in middle)
+  // Match anywhere in the name (not just from the start)
   useEffect(() => {
-    if (!searchQuery.trim() || searchQuery.trim().length < 4) {
+    if (!searchQuery.trim()) {
       setFilteredGuests([])
       setIsSearching(false)
       return
@@ -82,11 +81,11 @@ export function GuestList() {
 
     const query = searchQuery.toLowerCase().trim()
     
-    // Strict sequence matching from the start
+    // Match if query appears anywhere in the name
     const filtered = guests.filter((guest) => {
       const guestName = guest.Name.toLowerCase()
-      // Check if guest name starts with the query sequence
-      return guestName.startsWith(query)
+      // Check if guest name contains the query anywhere
+      return guestName.includes(query)
     })
 
     setFilteredGuests(filtered)
@@ -421,7 +420,7 @@ export function GuestList() {
                         Please search for your name and confirm your RSVP.
                       </p>
                       <p className="text-[10px] sm:text-xs md:text-sm text-[#434F39]/70 font-[family-name:var(--font-crimson)]">
-                        Type at least 4 characters to search. If your name doesn't appear, you can request to join our celebration.
+                        Start typing your name to search. If your name doesn't appear, you can request to join our celebration.
                       </p>
                     </div>
 
@@ -435,14 +434,14 @@ export function GuestList() {
                           type="text"
                           value={searchQuery}
                           onChange={(e) => setSearchQuery(e.target.value)}
-                          placeholder="Type at least 4 characters..."
+                          placeholder="Type your name to search..."
                           className="w-full pl-8 sm:pl-10 pr-2.5 sm:pr-3 py-2.5 sm:py-3 md:py-3.5 border-2 border-[#434F39]/30 focus:border-[#434F39] rounded-lg text-xs sm:text-sm font-[family-name:var(--font-crimson)] text-[#434F39] placeholder:text-[#434F39]/50 transition-all duration-300 hover:border-[#434F39]/50 focus:ring-2 focus:ring-[#434F39]/20 bg-white shadow-sm focus:shadow-md"
                         />
                       </div>
                       
                       {/* Autocomplete dropdown */}
                       {isSearching && filteredGuests.length > 0 && (
-                        <div className="absolute z-[9999] w-full mt-1 sm:mt-1.5 md:mt-2 bg-white border-2 border-[#434F39]/20 rounded-lg shadow-xl max-h-48 sm:max-h-60 overflow-y-auto">
+                        <div className="absolute z-[100] w-full mt-1 sm:mt-1.5 md:mt-2 bg-white border-2 border-[#434F39]/20 rounded-lg shadow-xl max-h-48 sm:max-h-60 overflow-y-auto">
                           {filteredGuests.map((guest, index) => (
                             <button
                               key={index}
@@ -469,7 +468,7 @@ export function GuestList() {
                         </div>
                       )}
                       
-                      {searchQuery.length >= 4 && filteredGuests.length === 0 && !isSearching && (
+                      {searchQuery.trim().length > 0 && filteredGuests.length === 0 && !isSearching && (
                         <div className="mt-3 sm:mt-4 p-3 sm:p-4 bg-[#434F39]/10 border border-[#434F39]/20 rounded-lg">
                           <div className="flex items-start gap-2 sm:gap-3">
                             <AlertCircle className="h-4 w-4 sm:h-5 sm:w-5 text-[#434F39] flex-shrink-0 mt-0.5" />
@@ -494,7 +493,7 @@ export function GuestList() {
                       >
                         Cancel
                       </button>
-                      {searchQuery.length >= 4 && filteredGuests.length === 0 && !isSearching ? (
+                      {searchQuery.trim().length > 0 && filteredGuests.length === 0 && !isSearching ? (
                         <button
                           onClick={handleRequestToJoin}
                           disabled={isLoading || !searchQuery.trim()}

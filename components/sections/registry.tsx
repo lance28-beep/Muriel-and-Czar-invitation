@@ -105,29 +105,52 @@ export function Registry() {
                     </div>
                   </div>
 
-                  {/* GCash QR Code */}
-                  <div className="relative mt-8 sm:mt-10 md:mt-12">
-                    <div className="flex flex-col items-center space-y-4 sm:space-y-5">
-                      <div className="text-center">
-                        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold text-[#434F39] mb-2 sm:mb-3 uppercase tracking-wider">
-                          GCash
-                        </p>
-                        <p className="text-xs sm:text-sm text-[#434F39]/70 font-[family-name:var(--font-crimson)]">
-                          Scan to send monetary gift
-                        </p>
+                  {/* Payment Options */}
+                  <div className="relative mt-8 sm:mt-10 md:mt-12 w-full">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
+                      {/* GCash QR Code */}
+                      <div className="flex flex-col items-center space-y-4 sm:space-y-5">
+                        <div className="text-center">
+                          <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold text-[#434F39] mb-2 sm:mb-3 uppercase tracking-wider">
+                            GCash
+                          </p>
+                          <p className="text-xs sm:text-sm text-[#434F39]/70 font-[family-name:var(--font-crimson)]">
+                            Scan to send monetary gift
+                          </p>
+                        </div>
+                        <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white rounded-xl p-3 sm:p-4 shadow-lg border-2 border-[#434F39]/20">
+                          <Image
+                            src="/QR/newQR.png"
+                            alt="GCash QR Code"
+                            fill
+                            className="object-contain rounded-lg"
+                          />
+                        </div>
                       </div>
-                      <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white rounded-xl p-3 sm:p-4 shadow-lg border-2 border-[#434F39]/20">
-                        <Image
-                          src="/QR/newQR.png"
-                          alt="QR Code"
-                          fill
-                          className="object-contain rounded-lg"
-                        />
+
+                      {/* BDO Bank QR Code */}
+                      <div className="flex flex-col items-center space-y-4 sm:space-y-5">
+                        <div className="text-center">
+                          <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-semibold text-[#434F39] mb-2 sm:mb-3 uppercase tracking-wider">
+                            BDO Bank
+                          </p>
+                          <p className="text-xs sm:text-sm text-[#434F39]/70 font-[family-name:var(--font-crimson)]">
+                            Scan to send monetary gift
+                          </p>
+                        </div>
+                        <div className="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 bg-white rounded-xl p-3 sm:p-4 shadow-lg border-2 border-[#434F39]/20">
+                          <Image
+                            src="/QR/BDO.png"
+                            alt="BDO Bank QR Code"
+                            fill
+                            className="object-contain rounded-lg"
+                          />
+                        </div>
                       </div>
-                      <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-light text-[#434F39]/80 leading-relaxed tracking-wide mt-4 text-center">
-                        Money gifts can also be given in person.
-                      </p>
                     </div>
+                    <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] font-light text-[#434F39]/80 leading-relaxed tracking-wide mt-6 sm:mt-8 text-center">
+                      Money gifts can also be given in person.
+                    </p>
                   </div>
                 </div>
               </div>
