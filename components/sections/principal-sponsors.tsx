@@ -24,7 +24,7 @@ export function PrincipalSponsors() {
     const textAlign =
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
-      <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold uppercase text-[#434F39] mb-2 sm:mb-3 md:mb-4 tracking-[0.1em] sm:tracking-[0.12em] ${textAlign} ${className}`}>
+      <h3 className={`text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold uppercase text-[#6A1F08] mb-2 sm:mb-3 md:mb-4 tracking-[0.1em] sm:tracking-[0.12em] ${textAlign} ${className}`}>
         {children}
       </h3>
     )
@@ -38,7 +38,7 @@ export function PrincipalSponsors() {
       align === "right" ? "text-right" : align === "left" ? "text-left" : "text-center"
     return (
       <div className={`flex flex-col ${containerAlign} justify-center py-0.5 sm:py-1 md:py-1.5 w-full`}>
-        <p className={`text-[#434F39] text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-medium leading-tight sm:leading-snug break-words ${textAlign}`}>{name}</p>
+        <p className={`text-[#6A1F08] text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-medium leading-tight sm:leading-snug break-words ${textAlign}`}>{name}</p>
       </div>
     )
   }
@@ -92,20 +92,51 @@ export function PrincipalSponsors() {
       className="relative py-16 sm:py-20 md:py-24 lg:py-28"
     >
       {/* Background matching countdown section */}
-      <div className="absolute inset-0 bg-[#BDCBCB] backdrop-blur-sm pointer-events-none" />
+      <div 
+        className="absolute inset-0 bg-[#9B4719] backdrop-blur-sm pointer-events-none" 
+        style={{
+          backgroundImage: `
+            repeating-linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.03) 0px,
+              transparent 1px,
+              transparent 2px,
+              rgba(0, 0, 0, 0.03) 3px
+            ),
+            repeating-linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.05) 0px,
+              transparent 1px,
+              transparent 2px,
+              rgba(255, 255, 255, 0.02) 3px,
+              transparent 4px,
+              rgba(0, 0, 0, 0.03) 5px
+            ),
+            linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.1) 0%,
+              transparent 20%,
+              transparent 80%,
+              rgba(0, 0, 0, 0.1) 100%
+            )
+          `,
+          backgroundSize: '100% 4px, 8px 100%, 100% 100%',
+          backgroundPosition: '0 0, 0 0, 0 0',
+        }}
+      />
 
       {/* Header */}
       <div className="relative z-10 text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6">
         <div className="flex items-center justify-center gap-2 mb-4">
-          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#85562A] to-transparent" />
+          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
         </div>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#85562A] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#EFD2AA] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
           Principal Sponsors
         </h2>
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
-          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#85562A] to-transparent" />
+          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
         </div>
-        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#85562A]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
+        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#EFD2AA]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
           Our Beloved Godparents
         </p>
       </div>
@@ -115,16 +146,16 @@ export function PrincipalSponsors() {
         {/* Main card with elegant styling */}
         <div className="relative group">
           {/* Subtle glow on hover */}
-          <div className="absolute -inset-1 bg-gradient-to-br from-[#434F39]/20 to-[#434F39]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
+          <div className="absolute -inset-1 bg-gradient-to-br from-[#9B4719]/20 to-[#9B4719]/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-lg" />
           
-          <div className="relative bg-white backdrop-blur-sm rounded-xl sm:rounded-2xl border-2 border-[#434F39]/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#434F39]/50 overflow-hidden" style={{ backgroundColor: '#FFFFFF' }}>
+          <div className="relative backdrop-blur-sm rounded-xl sm:rounded-2xl border-2 border-[#9B4719]/30 shadow-xl hover:shadow-2xl transition-all duration-300 hover:border-[#9B4719]/50 overflow-hidden" style={{ backgroundColor: '#EFD2AA' }}>
             {/* Card content */}
             <div className="relative p-4 sm:p-6 md:p-8 lg:p-10">
               {isLoading ? (
                 <div className="flex items-center justify-center py-12 sm:py-16 md:py-24">
                   <div className="flex flex-col items-center gap-3 sm:gap-4">
-                    <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 animate-spin text-[#434F39]" />
-                    <span className="text-[#434F39]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
+                    <Loader2 className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 animate-spin text-[#6A1F08]" />
+                    <span className="text-[#6A1F08]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
                       Loading sponsors...
                     </span>
                   </div>
@@ -135,7 +166,7 @@ export function PrincipalSponsors() {
                     <p className="text-red-600 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg mb-3 sm:mb-4">{error}</p>
                     <button
                       onClick={fetchSponsors}
-                      className="text-[#434F39] hover:text-[#434F39]/70 font-[family-name:var(--font-crimson)] underline transition-colors duration-300 text-sm sm:text-base"
+                      className="text-[#6A1F08] hover:text-[#6A1F08]/70 font-[family-name:var(--font-crimson)] underline transition-colors duration-300 text-sm sm:text-base"
                     >
                       Try again
                     </button>
@@ -143,8 +174,8 @@ export function PrincipalSponsors() {
                 </div>
               ) : sponsorPairs.length === 0 ? (
                 <div className="text-center py-12 sm:py-16 md:py-24">
-                  <Users className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[#434F39]/30 mx-auto mb-3 sm:mb-4" />
-                  <p className="text-[#434F39]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
+                  <Users className="h-12 w-12 sm:h-14 sm:w-14 md:h-16 md:w-16 text-[#6A1F08]/30 mx-auto mb-3 sm:mb-4" />
+                  <p className="text-[#6A1F08]/70 font-[family-name:var(--font-crimson)] text-sm sm:text-base md:text-lg">
                     No sponsors yet
                   </p>
                 </div>

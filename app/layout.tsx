@@ -54,7 +54,7 @@ const jsonLd = {
     "@type": "Person",
     name: coupleNames,
   },
-  eventHashtag: `#MurielAndCzar`,
+  eventHashtag: `#naCZARightOneNasiMURIELANNE #MURIELisThewANNEforCZARALVIN #CZARfoundHisANNEtherHalf`,
 }
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
   },
   description: eventDescription,
     keywords:
-    `${siteConfig.couple.groomNickname} ${siteConfig.couple.brideNickname} wedding, ${siteConfig.ceremony.venue} wedding, ${siteConfig.reception.venue} wedding, wedding invitation, RSVP, wedding gallery, message wall, love story, #MurielAndCzar`,
+    `${siteConfig.couple.groomNickname} ${siteConfig.couple.brideNickname} wedding, ${siteConfig.ceremony.venue} wedding, ${siteConfig.reception.venue} wedding, wedding invitation, RSVP, wedding gallery, message wall, love story, #naCZARightOneNasiMURIELANNE #MURIELisThewANNEforCZARALVIN #CZARfoundHisANNEtherHalf`,
   applicationName: `${coupleNames} Wedding Invitation`,
   authors: [
     { name: siteConfig.couple.groomNickname },
@@ -133,7 +133,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${coupleNames} Wedding Invitation`,
     description:
-      `You're invited to the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} on ${siteConfig.wedding.date}. RSVP, explore their story, and get all the details for the big day! #MurielAndCzar`,
+      `You're invited to the wedding of ${siteConfig.couple.groomNickname} & ${siteConfig.couple.brideNickname} on ${siteConfig.wedding.date}. RSVP, explore their story, and get all the details for the big day! #naCZARightOneNasiMURIELANNE #MURIELisThewANNEforCZARALVIN #CZARfoundHisANNEtherHalf`,
     images: [eventImageUrl],
     creator: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,
     site: `@${siteConfig.couple.groomNickname}And${siteConfig.couple.brideNickname}`,

@@ -9,7 +9,7 @@ export function Narrative() {
   return (
     <Section id="narrative" className="relative py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-[#FAFBFB] backdrop-blur-sm pointer-events-none" />
+      <div className="absolute inset-0 bg-[#EFD2AA] backdrop-blur-sm pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title - Matching countdown section style */}
@@ -21,13 +21,13 @@ export function Narrative() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#434F39] to-transparent" />
+            <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#800A06] to-transparent" />
           </div>
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#434F39] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#800A06] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
             Our Love Story
           </h2>
           <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
-            <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#434F39] to-transparent" />
+            <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#800A06] to-transparent" />
           </div>
         </motion.div>
 
@@ -46,8 +46,8 @@ export function Narrative() {
           <div className="flex justify-center">
             <div className="relative">
               {/* Enhanced glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#434F39]/20 via-[#434F39]/10 to-transparent rounded-full blur-3xl -z-10 w-full h-full max-w-sm animate-pulse"></div>
-              <div className="absolute inset-0 bg-gradient-to-tr from-[#434F39]/15 via-transparent to-transparent rounded-full blur-2xl -z-10 w-full h-full max-w-sm"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-[#800A06]/20 via-[#800A06]/10 to-transparent rounded-full blur-3xl -z-10 w-full h-full max-w-sm animate-pulse"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-[#800A06]/15 via-transparent to-transparent rounded-full blur-2xl -z-10 w-full h-full max-w-sm"></div>
 
               <Stack
                 randomRotation={true}
@@ -64,7 +64,7 @@ export function Narrative() {
               />
 
               <motion.p 
-                className="text-center text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#434F39]/80 mt-8 font-light tracking-wide"
+                className="text-center text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#800A06]/80 mt-8 font-light tracking-wide"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -99,14 +99,14 @@ export function Narrative() {
               >
                 {/* First paragraph with drop cap */}
                 {index === 0 ? (
-                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] leading-relaxed text-[#434F39] text-pretty font-light pl-3 md:pl-6">
-                    <span className="float-left text-4xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-bold text-[#434F39] leading-none mr-2 mt-1 drop-shadow-md">
+                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] leading-relaxed text-[#800A06] text-pretty font-light pl-3 md:pl-6">
+                    <span className="float-left text-4xl md:text-7xl lg:text-8xl font-[family-name:var(--font-crimson)] font-bold text-[#800A06] leading-none mr-2 mt-1 drop-shadow-md">
                       {paragraph.charAt(0)}
                     </span>
                     {paragraph.slice(1)}
                   </p>
                 ) : (
-                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] leading-relaxed text-[#434F39] text-pretty font-light pl-3 md:pl-6">
+                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] leading-relaxed text-[#800A06] text-pretty font-light pl-3 md:pl-6">
                     {paragraph}
                   </p>
                 )}
@@ -124,14 +124,14 @@ export function Narrative() {
           >
             {/* Decorative divider */}
             <div className="flex items-center justify-center gap-2">
-              <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#434F39] to-transparent" />
+              <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#800A06] to-transparent" />
             </div>
 
             {/* CTA Button - Matching countdown style */}
             <div className="flex justify-center">
               <motion.a
                 href="#guest-list"
-                className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 md:px-12 lg:px-14 py-3 sm:py-3.5 md:py-4 lg:py-4.5 font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base md:text-lg text-[#85562A] bg-white hover:bg-[#E6ECE6] transition-all duration-300 tracking-wider uppercase border-2 border-[#85562A] hover:border-[#85562A]/80 hover:scale-105 hover:shadow-[0_10px_30px_rgba(133,86,42,0.25)] hover:brightness-105 active:scale-100 premium-shadow rounded-sm relative overflow-hidden group"
+                className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 md:px-12 lg:px-14 py-3 sm:py-3.5 md:py-4 lg:py-4.5 font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base md:text-lg text-[#800A06] bg-white hover:bg-[#FAAF38] transition-all duration-300 tracking-wider uppercase border-2 border-[#800A06] hover:border-[#800A06]/80 hover:scale-105 hover:shadow-[0_10px_30px_rgba(128,10,6,0.25)] hover:brightness-105 active:scale-100 premium-shadow rounded-sm relative overflow-hidden group"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

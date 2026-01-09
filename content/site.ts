@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "May 29, 2026",
-    time: "3:00 PM",
+    time: "2:00 PM",
     venue: "Buddy-One Camp, Tuba, Benguet",
     tagline: "are getting married!",
     theme: "Rustic Countryside",
@@ -15,13 +15,13 @@ export const siteConfig = {
   },
   details: {
     rsvp: {
-      deadline: "November 15, 2025",
+      deadline: "February 28, 2026",
       contacts: "+639XXXXXXXXX | +639XXXXXXXXX",
       names: "Muriel & Czar"
     },
     policies: {
       attendance: "As we celebrate this moment with our closest loved ones, we kindly ask that attendance be limited to those named on the invitation",
-      gifts: "Your presence is the greatest gift of all. But if you wish to bless us further, a monetary gift will help us start our new life together. Note: Money gifts can also be given in person.",
+      gifts: "We prefer monetary gift for future use. Gift will be given during the celebration.",
       children: "We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. (Children in our family and the entourage are the exception)",
       photos: "We'd love for everyone to be fully present. Please avoid posting photos during the celebration or ahead of time—our photographers will take care of the memories"
     }
@@ -29,19 +29,21 @@ export const siteConfig = {
   ceremony: {
     location: "Buddy-One Camp",
     venue: "Buddy-One Camp",
+    venueDetail: "Back Garden of buddy One camp",
     address: "Tuba, Benguet",
     date: "May 29, 2026",
     day: "Friday",
-    time: "3:00 PM",
+    time: "2:00 PM",
     entourageTime: "2:00 PM",
     guestsTime: "2:30 PM",
   },
   reception: {
     location: "Buddy-One Camp",
     venue: "Buddy-One Camp",
+    venueDetail: "Function Hall pf Buddy One Camp",
     address: "Tuba, Benguet",
     date: "May 29, 2026",
-    time: "3:00 PM",
+    time: "5:30 PM",
   },
   dressCode: {
     theme: "Rustic Countryside",

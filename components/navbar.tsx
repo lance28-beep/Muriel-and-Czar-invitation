@@ -3,7 +3,6 @@
 import { useState, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Heart, Sparkles } from "lucide-react";
 import { siteConfig } from "@/content/site";
 import StaggeredMenu from "./StaggeredMenu";
 
@@ -88,9 +87,38 @@ export function Navbar() {
     <nav
       className={`sticky top-0 z-50 transition-all duration-500 ease-out ${
         isScrolled
-          ? "bg-[#434F39]/95 backdrop-blur-xl shadow-sm border-b border-[#434F39]/30 premium-shadow"
-          : "bg-[#434F39]/85 backdrop-blur-lg border-b border-[#434F39]/20"
+          ? "bg-[#9B4719]/95 backdrop-blur-xl shadow-sm border-b border-[#800A06]/30 premium-shadow"
+          : "bg-[#9B4719]/85 backdrop-blur-lg border-b border-[#800A06]/20"
       }`}
+      style={{
+        backgroundImage: `
+          repeating-linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.03) 0px,
+            transparent 1px,
+            transparent 2px,
+            rgba(0, 0, 0, 0.03) 3px
+          ),
+          repeating-linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.05) 0px,
+            transparent 1px,
+            transparent 2px,
+            rgba(255, 255, 255, 0.02) 3px,
+            transparent 4px,
+            rgba(0, 0, 0, 0.03) 5px
+          ),
+          linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.1) 0%,
+            transparent 20%,
+            transparent 80%,
+            rgba(0, 0, 0, 0.1) 100%
+          )
+        `,
+        backgroundSize: '100% 4px, 8px 100%, 100% 100%',
+        backgroundPosition: '0 0, 0 0, 0 0',
+      }}
     >
       <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 relative">
         <div className="flex justify-between items-center h-16 sm:h-16 md:h-14">
@@ -102,13 +130,14 @@ export function Navbar() {
                   src="/monogram/monogramNew2.png"
                   alt="Muriel & Czar Monogram"
                   fill
-                  className="object-contain brightness-0 invert"
+                  className="object-contain"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(88%) sepia(8%) saturate(800%) hue-rotate(350deg) brightness(110%) contrast(95%)' }}
                   priority
                 />
               </div>
 
               {/* Names with accent color on hover */}
-              <div className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-white/80 transition-all duration-300 tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-white uppercase whitespace-nowrap">
+              <div className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold group-hover:text-[#EFD2AA]/80 transition-all duration-300 tracking-[0.1em] sm:tracking-[0.15em] md:tracking-[0.2em] text-[#EFD2AA] uppercase whitespace-nowrap">
                 {siteConfig.couple.brideNickname} & {siteConfig.couple.groomNickname}
               </div>
             </div>
@@ -123,13 +152,13 @@ export function Navbar() {
                   href={link.href}
                   className={`px-3 lg:px-4 py-1.5 text-xs lg:text-sm font-[family-name:var(--font-crimson)] font-normal tracking-wide transition-all duration-300 relative group ${
                     isActive
-                      ? "text-white"
-                      : "text-white/80 hover:text-white"
+                      ? "text-[#EFD2AA]"
+                      : "text-[#EFD2AA]/80 hover:text-[#EFD2AA]"
                   }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute bottom-0 left-0 h-[1.5px] bg-gradient-to-r from-white to-white/80 transition-all duration-300 ${
+                    className={`absolute bottom-0 left-0 h-[1.5px] bg-gradient-to-r from-[#EFD2AA] to-[#EFD2AA]/80 transition-all duration-300 ${
                       isActive ? "w-full" : "w-0 group-hover:w-full"
                     }`}
                   />
@@ -145,8 +174,8 @@ export function Navbar() {
               socialItems={[]}
               displaySocials={false}
               displayItemNumbering={true}
-              menuButtonColor="#FFFFFF"
-              openMenuButtonColor="#FFFFFF"
+              menuButtonColor="#EFD2AA"
+              openMenuButtonColor="#EFD2AA"
               changeMenuColorOnOpen={true}
               colors={["#F9F8F4", "#800A06", "#6A1F08", "#F9F8F4", "#9F8650"]}
               accentColor="#F9F8F4"

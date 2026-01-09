@@ -23,7 +23,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         </video>
 
         {/* Soft overlay tint */}
-        <div className="absolute inset-0 bg-[#BDCBCB]/55 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#EFD2AA]/55 pointer-events-none" />
       </div>
 
       {/* Content Container */}
@@ -31,13 +31,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         
         {/* Top Logo/Monogram */}
         <FadeIn show={visible} delay={300} className="mb-auto mt-8">
-          <div className="w-20 h-24 border border-[#434F39]/40 rounded-[2rem] flex items-center justify-center backdrop-blur-sm bg-[#BDCBCB]/90">
+          <div className="w-20 h-24 border border-[#800A06]/40 rounded-[2rem] flex items-center justify-center backdrop-blur-sm bg-[#EFD2AA]/90">
             <div className="relative w-14 h-14">
               <Image
                 src="/monogram/monogramgreen.png"
                 alt="Muriel & Czar Monogram"
                 fill
                 className="object-contain"
+                style={{ filter: 'brightness(0) saturate(100%) invert(8%) sepia(95%) saturate(5000%) hue-rotate(350deg) brightness(90%) contrast(120%)' }}
                 priority
               />
             </div>
@@ -49,7 +50,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
         <div className="flex flex-col items-center justify-end w-full gap-4 pb-14 sm:pb-16 md:pb-20">
           <FadeIn show={visible} delay={600}>
             <h2
-              className="text-6xl md:text-8xl transform -rotate-6 drop-shadow-lg opacity-95 text-[#434F39]"
+              className="text-6xl md:text-8xl transform -rotate-6 drop-shadow-lg opacity-95 text-[#800A06]"
               style={{
                 fontFamily: '"Great Vibes", cursive',
                 fontWeight: 400,
@@ -62,7 +63,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           
           <FadeIn show={visible} delay={900}>
             <h1
-              className="text-5xl md:text-7xl font-bold tracking-wider uppercase drop-shadow-[0_8px_20px_rgba(0,0,0,0.3)] text-[#434F39]"
+              className="text-5xl md:text-7xl font-bold tracking-wider uppercase drop-shadow-[0_8px_20px_rgba(0,0,0,0.3)] text-[#800A06]"
               style={{
                 fontFamily: '"Cinzel", serif',
                 fontWeight: 700,
@@ -75,7 +76,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpen, visible }) => {
           <FadeIn show={visible} delay={1500}>
             <button 
               onClick={onOpen}
-              className="group relative px-10 py-4 bg-[#434F39] text-white font-serif text-sm tracking-[0.2em] uppercase transition-all duration-500 hover:bg-[#434F39]/90 shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 rounded-sm overflow-hidden"
+              className="group relative px-10 py-4 bg-[#9B4719] text-white font-serif text-sm tracking-[0.2em] uppercase transition-all duration-500 hover:bg-[#9B4719]/90 shadow-lg hover:shadow-xl hover:-translate-y-1 active:translate-y-0 rounded-sm overflow-hidden"
             >
               <span
                 className="relative z-10 text-white"

@@ -94,20 +94,51 @@ export function Gallery() {
       className="relative py-16 sm:py-20 md:py-24 lg:py-28 overflow-hidden"
     >
       {/* Background matching countdown section */}
-      <div className="absolute inset-0 bg-[#BDCBCB] backdrop-blur-sm pointer-events-none" />
+      <div 
+        className="absolute inset-0 bg-[#9B4719] backdrop-blur-sm pointer-events-none" 
+        style={{
+          backgroundImage: `
+            repeating-linear-gradient(
+              0deg,
+              rgba(0, 0, 0, 0.03) 0px,
+              transparent 1px,
+              transparent 2px,
+              rgba(0, 0, 0, 0.03) 3px
+            ),
+            repeating-linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.05) 0px,
+              transparent 1px,
+              transparent 2px,
+              rgba(255, 255, 255, 0.02) 3px,
+              transparent 4px,
+              rgba(0, 0, 0, 0.03) 5px
+            ),
+            linear-gradient(
+              90deg,
+              rgba(0, 0, 0, 0.1) 0%,
+              transparent 20%,
+              transparent 80%,
+              rgba(0, 0, 0, 0.1) 100%
+            )
+          `,
+          backgroundSize: '100% 4px, 8px 100%, 100% 100%',
+          backgroundPosition: '0 0, 0 0, 0 0',
+        }}
+      />
 
       {/* Header */}
       <div className="relative z-10 text-center mb-8 sm:mb-12 md:mb-16 px-4 sm:px-6">
         <div className="flex items-center justify-center gap-2 mb-4">
-          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#85562A] to-transparent" />
+          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
         </div>
-        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#85562A] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
+        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#EFD2AA] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
           Our Moments
         </h2>
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
-          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#85562A] to-transparent" />
+          <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
         </div>
-        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#85562A]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
+        <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#EFD2AA]/80 font-light max-w-xl mx-auto leading-relaxed tracking-wide px-2">
           Every moment, a treasured memory made eternal
         </p>
       </div>
@@ -118,7 +149,7 @@ export function Gallery() {
           <div className="max-w-6xl w-full">
             {isLoading ? (
               <div className="flex items-center justify-center h-64 sm:h-80 md:h-96">
-                <div className="w-12 h-12 border-[3px] border-[#434F39]/30 border-t-[#434F39] rounded-full animate-spin" />
+                <div className="w-12 h-12 border-[3px] border-[#EFD2AA]/30 border-t-[#EFD2AA] rounded-full animate-spin" />
               </div>
             ) : (
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-5 lg:gap-6">
@@ -126,7 +157,7 @@ export function Gallery() {
                   <button
                     key={item.image + index}
                     type="button"
-                    className="group relative w-full overflow-hidden rounded-lg sm:rounded-xl bg-white/80 backdrop-blur-sm border border-[#434F39]/30 shadow-lg hover:shadow-xl hover:border-[#434F39]/50 transition-all duration-300"
+                    className="group relative w-full overflow-hidden rounded-lg sm:rounded-xl bg-white/80 backdrop-blur-sm border border-[#EFD2AA]/30 shadow-lg hover:shadow-xl hover:border-[#EFD2AA]/50 transition-all duration-300"
                     onClick={() => {
                       setSelectedImage(item)
                       setCurrentIndex(index)
@@ -134,7 +165,7 @@ export function Gallery() {
                     aria-label={`Open image ${index + 1}`}
                   >
                     {/* Subtle glow on hover */}
-                    <div className="absolute -inset-0.5 bg-gradient-to-br from-[#434F39]/20 to-[#434F39]/10 rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
+                    <div className="absolute -inset-0.5 bg-gradient-to-br from-[#EFD2AA]/20 to-[#EFD2AA]/10 rounded-lg sm:rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-sm" />
                     
                     <div className="relative aspect-[3/4] md:aspect-square overflow-hidden">
                       <img
@@ -150,8 +181,8 @@ export function Gallery() {
                     </div>
                     
                     {/* Image counter badge */}
-                    <div className="absolute top-2 right-2 bg-[#434F39]/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <span className="text-xs font-medium text-white">
+                    <div className="absolute top-2 right-2 bg-[#EFD2AA]/60 backdrop-blur-sm rounded-full px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-xs font-medium text-[#9B4719]">
                         {index + 1}/{galleryItems.length}
                       </span>
                     </div>
@@ -166,7 +197,7 @@ export function Gallery() {
         <div className="relative z-10 flex justify-center mt-10 sm:mt-12 md:mt-16 px-4 sm:px-6">
           <Link
             href="/gallery"
-            className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 md:px-12 lg:px-14 py-3 sm:py-3.5 md:py-4 lg:py-4.5 font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base md:text-lg text-[#85562A] bg-white hover:bg-[#E6ECE6] transition-all duration-300 tracking-wider uppercase border-2 border-[#85562A] hover:border-[#85562A]/80 hover:scale-105 hover:shadow-[0_10px_30px_rgba(133,86,42,0.25)] hover:brightness-105 active:scale-100 premium-shadow rounded-sm relative overflow-hidden group"
+            className="inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-10 md:px-12 lg:px-14 py-3 sm:py-3.5 md:py-4 lg:py-4.5 font-[family-name:var(--font-crimson)] font-semibold text-sm sm:text-base md:text-lg text-[#9B4719] bg-[#EFD2AA] hover:bg-[#EFD2AA]/90 transition-all duration-300 tracking-wider uppercase border-2 border-[#EFD2AA] hover:border-[#EFD2AA]/80 hover:scale-105 hover:shadow-[0_10px_30px_rgba(239,210,170,0.25)] hover:brightness-105 active:scale-100 premium-shadow rounded-sm relative overflow-hidden group"
           >
             <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></span>
             <span className="relative z-10">View Full Gallery</span>
@@ -239,8 +270,8 @@ export function Gallery() {
             {/* Top bar with counter and close */}
             <div className="absolute top-0 left-0 right-0 z-30 flex items-center justify-between p-4 sm:p-6">
               {/* Image counter */}
-              <div className="bg-black/40 backdrop-blur-md rounded-full px-4 py-2 border border-[#434F39]/40">
-                <span className="text-sm sm:text-base font-medium text-[#434F39]">
+              <div className="bg-black/40 backdrop-blur-md rounded-full px-4 py-2 border border-[#EFD2AA]/40">
+                <span className="text-sm sm:text-base font-medium text-[#EFD2AA]">
                   {currentIndex + 1} / {galleryItems.length}
                 </span>
               </div>

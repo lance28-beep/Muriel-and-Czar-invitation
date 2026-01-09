@@ -41,18 +41,18 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
       }`}
     >
       {/* Background */}
-      <div className="absolute inset-0 bg-[#BDCBCB]" />
+      <div className="absolute inset-0 bg-[#EFD2AA]" />
 
       <div className="relative flex flex-col items-center justify-center px-6">
         <div className="relative flex items-center justify-center mb-8">
           {/* Glow halos */}
-          <div className="absolute w-40 h-40 rounded-full bg-[#434F39]/25 blur-3xl animate-pulse" />
-          <div className="absolute w-28 h-28 rounded-full bg-[#434F39]/20 blur-2xl animate-ping" />
+          <div className="absolute w-40 h-40 rounded-full bg-[#800A06]/25 blur-3xl animate-pulse" />
+          <div className="absolute w-28 h-28 rounded-full bg-[#800A06]/20 blur-2xl animate-ping" />
 
           {/* Outer decorative rings */}
-          <div className="absolute w-32 h-32 rounded-full border border-[#434F39]/40 animate-ping" />
-          <div className="absolute w-26 h-26 rounded-full border border-[#434F39]/30 animate-[spin_7s_linear_infinite]" />
-          <div className="absolute w-22 h-22 rounded-full border-t-2 border-b-2 border-[#434F39]/50 animate-[spin_12s_linear_infinite_reverse]" />
+          <div className="absolute w-32 h-32 rounded-full border border-[#800A06]/40 animate-ping" />
+          <div className="absolute w-26 h-26 rounded-full border border-[#800A06]/30 animate-[spin_7s_linear_infinite]" />
+          <div className="absolute w-22 h-22 rounded-full border-t-2 border-b-2 border-[#800A06]/50 animate-[spin_12s_linear_infinite_reverse]" />
 
           {/* Monogram */}
           <div className="flex flex-col items-center justify-center z-10">
@@ -62,6 +62,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
                 alt="Muriel & Czar Monogram"
                 fill
                 className="object-contain"
+                style={{ filter: 'brightness(0) saturate(100%) invert(8%) sepia(95%) saturate(5000%) hue-rotate(350deg) brightness(90%) contrast(120%)' }}
                 priority
               />
             </div>
@@ -71,7 +72,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         {/* Couple Name */}
         <div className="mb-4 text-center">
           <h2
-            className="text-2xl sm:text-3xl md:text-4xl text-[#434F39] font-serif tracking-wide"
+            className="text-2xl sm:text-3xl md:text-4xl text-[#800A06] font-serif tracking-wide"
             style={{ fontFamily: '"Cinzel", serif', fontWeight: 600 }}
           >
             Muriel & Czar
@@ -81,7 +82,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
         {/* Introductory Message */}
         <div className="mb-8 text-center max-w-md">
           <p
-            className="text-sm sm:text-base text-[#434F39] leading-relaxed"
+            className="text-sm sm:text-base text-[#800A06] leading-relaxed"
             style={{ fontFamily: '"Cinzel", serif', fontWeight: 400 }}
           >
             Welcome to our special day. We're so excited to share this moment with you.
@@ -90,9 +91,9 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onComplete }) => {
 
         {/* Progress Bar */}
         <div className="w-full max-w-xs sm:max-w-sm">
-          <div className="h-1 bg-[#434F39]/20 rounded-full overflow-hidden">
+          <div className="h-1 bg-[#800A06]/20 rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#434F39] rounded-full transition-all duration-100 ease-out"
+              className="h-full bg-[#800A06] rounded-full transition-all duration-100 ease-out"
               style={{ width: `${progress}%` }}
             />
           </div>
