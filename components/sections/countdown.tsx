@@ -270,10 +270,18 @@ export function Countdown() {
                 <div className="h-[1px] w-8 sm:w-12 md:w-16 bg-gradient-to-l from-transparent via-[#EFD2AA] to-[#EFD2AA]" />
               </div>
               
-              {/* Time - Better readability */}
-              <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#EFD2AA] tracking-wide mb-3 sm:mb-4">
-                {siteConfig.ceremony.time}
-              </p>
+              {/* Ceremony Times */}
+              <div className="space-y-2 sm:space-y-3 mb-3 sm:mb-4">
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#EFD2AA] tracking-wide">
+                  Ceremony Call Time: 2:00 PM
+                </p>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#EFD2AA] tracking-wide">
+                  Ceremony Start: 3:00 PM
+                </p>
+                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-medium text-[#EFD2AA]/90 tracking-wide italic">
+                  Please be on time
+                </p>
+              </div>
               
               {/* Bottom decorative line */}
               <div className="flex items-center justify-center gap-2 sm:gap-3">
