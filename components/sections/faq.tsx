@@ -13,7 +13,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When and where is the wedding?",
     answer:
-      "The wedding will be held on Friday, May 29, 2026, at 2:00 PM at Buddy-One Camp, Tuba, Benguet.\n\nCeremony: Back Garden of buddy One camp (2pm)\n\nReception: Function Hall pf Buddy One Camp (5:30pm)",
+      "The wedding will be held on Friday, May 29, 2026, at Buddy-One Camp, Tuba, Benguet.\n\nCeremony Call Time: 2:00 PM\nCeremony Start: 3:00 PM\nPlease be on time.\n\nCeremony: Back Garden of buddy One camp\n\nReception: Function Hall pf Buddy One Camp (5:30pm)",
   },
   {
     question: "What is the dress code?",
@@ -53,12 +53,12 @@ const faqItems: FAQItem[] = [
   {
     question: "How do I get to the venue?",
     answer:
-      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to Buddy-One Camp, Tuba, Benguet.\n\nCeremony: Back Garden of buddy One camp (2pm)\n\nReception: Function Hall pf Buddy One Camp (5:30pm)",
+      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to Buddy-One Camp, Tuba, Benguet.\n\nCeremony Call Time: 2:00 PM\nCeremony Start: 3:00 PM\nPlease be on time.\n\nCeremony: Back Garden of buddy One camp\n\nReception: Function Hall pf Buddy One Camp (5:30pm)",
   },
   {
     question: "Is there parking available?",
     answer:
-      "Yes! The venue has parking facilities. We recommend arriving 15-20 minutes early to secure a spot and get settled comfortably. The ceremony starts at 2:00 PM.",
+      "Yes! The venue has parking facilities. We recommend arriving by the call time (2:00 PM) to secure a spot and get settled comfortably. The ceremony starts at 3:00 PM. Please be on time.",
   },
   {
     question: "What should I do if I need to cancel or update my RSVP?",

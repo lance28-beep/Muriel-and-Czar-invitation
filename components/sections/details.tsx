@@ -166,8 +166,14 @@ export function Details() {
                 </div>
 
                 {/* Time */}
-                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] tracking-wide mb-4 sm:mb-6">
-                  Ceremony: 2:00 PM
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] tracking-wide mb-2 sm:mb-3">
+                  Ceremony Call Time: 2:00 PM
+                </p>
+                <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] tracking-wide mb-2 sm:mb-3">
+                  Ceremony Start: 3:00 PM
+                </p>
+                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-medium text-[#6A1F08]/90 tracking-wide italic mb-4 sm:mb-6">
+                  Please be on time
                 </p>
                 <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] tracking-wide">
                   Reception: 5:30 PM
@@ -389,6 +395,13 @@ export function Details() {
             
             {/* Reminders List */}
             <div className="space-y-5 sm:space-y-6 md:space-y-7">
+              {/* Ceremony Time */}
+              <div className="bg-gradient-to-br from-white/30 via-white/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#6A1F08]/20">
+                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
+                  <span className="font-semibold">Ceremony Time:</span> Call time is 2:00 PM and the ceremony starts at 3:00 PM. Please be on time.
+                </p>
+              </div>
+
               {/* Attendance Limited */}
               <div className="bg-gradient-to-br from-white/30 via-white/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#6A1F08]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">

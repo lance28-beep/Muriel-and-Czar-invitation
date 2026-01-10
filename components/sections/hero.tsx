@@ -159,20 +159,20 @@ export function Hero() {
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-2">
+            {/* <div className="flex items-center justify-center gap-2">
               <span className="h-[1px] w-8 sm:w-12 bg-gradient-to-r from-transparent via-[#800A06]/60 to-transparent" />
               <span className="w-1 h-1 rounded-full bg-[#800A06]/70" />
               <span className="h-[1px] w-8 sm:w-12 bg-gradient-to-r from-transparent via-[#800A06]/60 to-transparent" />
-            </div>
+            </div> */}
 
-            <div className="space-y-1.5">
+            {/* <div className="space-y-1.5">
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-wider">
                 {receptionVenue}
               </p>
               <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#800A06]/80">
                 {receptionAddress}
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* Elegant CTA Button with earth tone gradient */}
