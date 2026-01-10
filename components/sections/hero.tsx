@@ -9,8 +9,6 @@ export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
   const ceremonyVenue = siteConfig.ceremony.venue
   const ceremonyAddress = siteConfig.ceremony.address
-  const receptionVenue = siteConfig.reception.venue
-  const receptionAddress = siteConfig.reception.address
   
   // Parse wedding date
   const weddingDate = new Date(siteConfig.ceremony.date)
@@ -21,7 +19,6 @@ export function Hero() {
   const day = weddingDate.getDate()
   const year = weddingDate.getFullYear()
   const dayOfWeek = dayNames[weddingDate.getDay()]
-  const weddingTime = siteConfig.ceremony.time
 
   useEffect(() => {
     setIsVisible(true)
@@ -124,15 +121,23 @@ export function Hero() {
               <div className="h-[1px] w-12 sm:w-16 md:w-20 bg-gradient-to-l from-transparent via-[#800A06] to-[#800A06]" />
             </div>
             
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 md:gap-4 text-[#800A06]">
+            <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 text-[#800A06]">
               <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#800A06]">{dayOfWeek}</span>
-              <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light my-2 sm:my-0 elegant-text-shadow">{day}</span>
-              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#800A06]">{weddingTime}</span>
+              <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light elegant-text-shadow">{day}</span>
             </div>
             
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-light text-[#800A06]">
               {year}
             </p>
+
+            <div className="flex flex-col items-center gap-1 sm:gap-2">
+              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
+                Ceremony Call Time: 2:00 PM
+              </span>
+              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
+                Ceremony Start: 3:00 PM
+              </span>
+            </div>
           </div>
 
           {/* Ceremony with warm gold accent */}
