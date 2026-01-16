@@ -249,129 +249,138 @@ export function Details() {
           <div className="flex items-center justify-center gap-2 mb-4">
             <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
           </div>
-          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#EFD2AA] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
-            Attire & Color Palette
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#EFD2AA] mb-2 sm:mb-3 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
+            Dress Code Guide & Color Motif
           </h3>
+          <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#EFD2AA] mb-4 sm:mb-6 uppercase tracking-wide">
+            Formal Attire
+          </p>
           <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
             <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
-          </div>
-        </div>
-
-        {/* Color Palette Section */}
-        <div className="relative group mb-8 sm:mb-10 md:mb-12">
-          <div className="relative backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#9B4719]/30 shadow-lg hover:shadow-xl transition-all duration-300" style={{ backgroundColor: '#EFD2AA' }}>
-            <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-4 sm:mb-6 uppercase tracking-[0.12em] text-center">
-              Color Palette for Guests & Sponsors
-            </h4>
-            <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed text-center mb-6 sm:mb-8">
-              RUSTIC COLOR, TERRACOTTA, ORANGE, NUDE, LIGHT BROWN
-            </p>
-            <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-              <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-2 border-white bg-[#C85A3A] hover:scale-110 hover:shadow-xl transition-all duration-300" />
-                <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#6A1F08]">Rustic</span>
-              </div>
-              <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-2 border-white bg-[#D2691E] hover:scale-110 hover:shadow-xl transition-all duration-300" />
-                <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#6A1F08]">Terracotta</span>
-              </div>
-              <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-2 border-white bg-[#FF8C42] hover:scale-110 hover:shadow-xl transition-all duration-300" />
-                <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#6A1F08]">Orange</span>
-              </div>
-              <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-2 border-white bg-[#E3BC9A] hover:scale-110 hover:shadow-xl transition-all duration-300" />
-                <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#6A1F08]">Nude</span>
-              </div>
-              <div className="flex flex-col items-center gap-2 sm:gap-2.5">
-                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full shadow-lg border-2 border-white bg-[#D2B48C] hover:scale-110 hover:shadow-xl transition-all duration-300" />
-                <span className="text-xs sm:text-sm font-[family-name:var(--font-crimson)] font-medium text-[#6A1F08]">Light Brown</span>
-              </div>
-            </div>
           </div>
         </div>
 
         {/* Dress Code Guide Section */}
         <div className="relative group mb-8 sm:mb-10 md:mb-12">
           <div className="relative backdrop-blur-sm rounded-xl sm:rounded-2xl p-6 sm:p-7 md:p-9 border-2 border-[#9B4719]/30 shadow-lg hover:shadow-xl transition-all duration-300" style={{ backgroundColor: '#EFD2AA' }}>
-            <h4 className="text-lg sm:text-xl md:text-2xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-6 sm:mb-8 uppercase tracking-[0.12em] text-center">
-              Dress Code Guide
-            </h4>
             
             <div className="space-y-6 sm:space-y-8">
               {/* Principal Sponsors */}
               <div>
-                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
-                  For Principal Sponsors:
+                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4 uppercase">
+                  Principal Sponsors
                 </h5>
+                {/* Color Palette */}
+                <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#EFDECE' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#F8D6A8' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#838184' }} />
+                </div>
                 <div className="space-y-2 sm:space-y-3">
                   <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                    <span className="font-semibold">Men:</span> Formal Barong Tagalog
+                    <span className="font-semibold">Ladies:</span> Long dress or long gown
                   </p>
                   <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                    <span className="font-semibold">Women:</span> Long Gown in Beige, Mocha, or Muted Rose tones
+                    <span className="font-semibold">Gents:</span> Barong Tagalog or long sleeves with coat and tie, and grey pants or slacks
                   </p>
                 </div>
               </div>
 
-              {/* Groomsmen & Bridesmaids */}
+              {/* Groomsmen and Bridesmaids */}
               <div>
-                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
-                  For Groomsmen & Bridesmaids:
+                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4 uppercase">
+                  Groomsmen and Bridesmaids
                 </h5>
+                {/* Color Palette */}
+                <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#7C4618' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#858086' }} />
+                </div>
                 <div className="space-y-2 sm:space-y-3">
                   <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                    <span className="font-semibold">Men:</span> White long sleeve with Navy blue pants or slacks
+                    <span className="font-semibold">Ladies:</span> Long dress or long gown with puff sleeve
                   </p>
                   <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                    <span className="font-semibold">Women:</span> Long Gown in Terracotta or Dusty Rose
+                    <span className="font-semibold">Gents:</span> Barong Tagalog and grey slacks
                   </p>
                 </div>
-              </div>
-
-              {/* Best Man & Maid of Honor */}
-              <div>
-                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
-                  For Best Man & Maid of Honor:
-                </h5>
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                  Coordinating tones with the entourage, slightly darker or more vibrant
-                </p>
-              </div>
-
-              {/* Wedding Bearers */}
-              <div>
-                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
-                  For Wedding Bearers:
-                </h5>
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                  White long sleeve with Navy blue pants or slacks
-                </p>
-              </div>
-
-              {/* Flower Girls */}
-              <div>
-                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
-                  Flower Girls:
-                </h5>
-                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                  Terracotta rustic floral accents
-                </p>
               </div>
 
               {/* Guests */}
               <div>
-                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
-                  For Guests:
+                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4 uppercase">
+                  Guests
                 </h5>
+                {/* Color Palette */}
+                <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#E2AC02' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#B5595A' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#54692E' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#595959' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#EFDECE' }} />
+                </div>
                 <div className="space-y-2 sm:space-y-3">
                   <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                    <span className="font-semibold">Men:</span> Long-sleeve polo in neutral or earth tones
+                    <span className="font-semibold">Ladies:</span> Long skirts with blouses, long dress or elegant jumpsuits
                   </p>
                   <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                    <span className="font-semibold">Women:</span> Dress in any earth tones of the theme colors (avoid white or ivory)
+                    <span className="font-semibold">Gents:</span> Button down long sleeves or short sleeves, with dark grey pants or slacks
                   </p>
                 </div>
+              </div>
+
+              {/* Best Man and Maid of Honor */}
+              <div>
+                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4 uppercase">
+                  Best Man and Maid of Honor
+                </h5>
+                {/* Color Palette */}
+                <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#B5651E' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#858086' }} />
+                </div>
+                <div className="space-y-2 sm:space-y-3">
+                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
+                    <span className="font-semibold">Ladies:</span> Long dress or long gown with puff sleeve
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
+                    <span className="font-semibold">Gents:</span> Barong Tagalog and grey slacks
+                  </p>
+                </div>
+              </div>
+
+              {/* Wedding Bearers */}
+              <div>
+                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4 uppercase">
+                  Wedding Bearers
+                </h5>
+                {/* Color Palette */}
+                <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#BA575A' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#546931' }} />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#818285' }} />
+                </div>
+                <div className="space-y-2 sm:space-y-3">
+                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
+                    <span className="font-semibold">Ladies:</span> Long dress or long gown with puff sleeve
+                  </p>
+                  <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
+                    <span className="font-semibold">Gents:</span> Button down long sleeves and grey slacks, coat and tie is optional
+                  </p>
+                </div>
+              </div>
+
+              {/* Gentle Reminders */}
+              <div className="mt-6 sm:mt-8 pt-6 sm:pt-8 border-t border-[#6A1F08]/20">
+                <h5 className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#6A1F08] mb-3 sm:mb-4">
+                  Gentle Reminders for All
+                </h5>
+                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
+                  Please wear plain, solid-colored attire only. Kindly avoid printed, patterned, or graphic tops. To maintain the formality of the event, please avoid wearing shorts, slippers, t-shirts, or any casual attire.
+                </p>
+                <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed mt-3 sm:mt-4 italic">
+                  We genuinely appreciate your patience and effort in helping make our wedding day even more special. Thank you!
+                </p>
               </div>
             </div>
           </div>
@@ -396,10 +405,10 @@ export function Details() {
                 </p>
               </div>
 
-              {/* No Boxed Gifts */}
+              {/* Gift Guide */}
               <div className="bg-gradient-to-br from-white/30 via-white/20 to-white rounded-xl p-5 sm:p-6 md:p-7 border border-[#6A1F08]/20">
                 <p className="text-sm sm:text-base md:text-lg font-[family-name:var(--font-crimson)] text-[#6A1F08] leading-relaxed">
-                  <span className="font-semibold">Gift Policy:</span> We prefer monetary gift for future use. Gift will be given during the celebration.
+                  <span className="font-semibold">Gift Guide:</span> With sincere appreciation, we respectfully prefer monetary gifts for our future. We kindly ask that any financial gifts be personally given to us on our wedding day.
                 </p>
               </div>
 

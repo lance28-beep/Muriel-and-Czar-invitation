@@ -2,13 +2,24 @@
 
 import { useEffect, useState } from "react"
 import Image from "next/image"
-import { Heart } from "lucide-react"
+import { Heart, Navigation } from "lucide-react"
 import { siteConfig } from "@/content/site"
 
 export function Hero() {
   const [isVisible, setIsVisible] = useState(false)
   const ceremonyVenue = siteConfig.ceremony.venue
+  const ceremonyVenueDetail = siteConfig.ceremony.venueDetail
   const ceremonyAddress = siteConfig.ceremony.address
+  
+  // Use complete address from config
+  const completeAddress = ceremonyAddress
+  
+  // Create Google Maps link
+  const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(completeAddress)}`
+  
+  const openInMaps = (link: string) => {
+    window.open(link, '_blank', 'noopener,noreferrer')
+  }
   
   // Parse wedding date
   const weddingDate = new Date(siteConfig.ceremony.date)
@@ -124,20 +135,14 @@ export function Hero() {
             <div className="flex items-center justify-center gap-2 sm:gap-3 md:gap-4 text-[#800A06]">
               <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#800A06]">{dayOfWeek}</span>
               <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light elegant-text-shadow">{day}</span>
+              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide ml-2 sm:ml-3 md:ml-4">
+                2:00 PM
+              </span>
             </div>
             
             <p className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-[family-name:var(--font-crimson)] font-light text-[#800A06]">
               {year}
             </p>
-
-            <div className="flex flex-col items-center gap-1 sm:gap-2">
-              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
-                Ceremony Call Time: 2:00 PM
-              </span>
-              <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide">
-                Ceremony Start: 3:00 PM
-              </span>
-            </div>
           </div>
 
           {/* Ceremony with warm gold accent */}
@@ -159,9 +164,27 @@ export function Hero() {
               <p className="text-sm sm:text-base md:text-lg lg:text-xl font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] uppercase tracking-wider">
                 {ceremonyVenue}
               </p>
-              <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#800A06]/80">
+              {ceremonyVenueDetail && (
+                <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#800A06]/90 italic">
+                  {ceremonyVenueDetail}
+                </p>
+              )}
+              <p className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-normal text-[#800A06]/80 leading-relaxed">
                 {ceremonyAddress}
               </p>
+            </div>
+            
+            {/* Google Maps Button */}
+            <div className="pt-2 sm:pt-3">
+              <button
+                onClick={() => openInMaps(ceremonyMapsLink)}
+                className="inline-flex items-center justify-center gap-2 sm:gap-2.5 px-6 sm:px-8 md:px-10 py-2.5 sm:py-3 md:py-3.5 bg-white hover:bg-[#FAAF38] transition-all duration-300 border-2 border-[#800A06] hover:border-[#800A06]/80 hover:scale-105 hover:shadow-[0_10px_30px_rgba(128,10,6,0.25)] active:scale-100 premium-shadow rounded-sm font-[family-name:var(--font-crimson)] font-semibold text-xs sm:text-sm md:text-base text-[#800A06] tracking-wide uppercase relative overflow-hidden group"
+                aria-label="Get directions to ceremony venue"
+              >
+                <span className="absolute inset-0 bg-gradient-to-r from-white/0 via-white/10 to-white/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out"></span>
+                <Navigation className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 group-hover:scale-110 transition-transform duration-300" />
+                <span className="relative z-10">Get Directions</span>
+              </button>
             </div>
 
             {/* <div className="flex items-center justify-center gap-2">

@@ -30,7 +30,7 @@ export const siteConfig = {
     location: "Buddy-One Camp",
     venue: "Buddy-One Camp",
     venueDetail: "Back Garden of buddy One camp",
-    address: "Tuba, Benguet",
+    address: "Badiwan Viaduct, Poblacion, along Marcos Highway, Tuba, Benguet",
     date: "May 29, 2026",
     day: "Friday",
     time: "2:00 PM",

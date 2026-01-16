@@ -36,9 +36,9 @@ const faqItems: FAQItem[] = [
       "We love your little ones, but to keep the celebration intimate, we kindly request an adults-only event. Children in our family and the entourage are the exception. We appreciate your understanding!",
   },
   {
-    question: "What is your gift policy?",
+    question: "What is your gift guide?",
     answer:
-      "We prefer monetary gift for future use. Gift will be given during the celebration.",
+      "With sincere appreciation, we respectfully prefer monetary gifts for our future. We kindly ask that any financial gifts be personally given to us on our wedding day. Your presence is truly a gift to us. Thank you so much. 🤍",
   },
   {
     question: "Can I take photos during the ceremony?",

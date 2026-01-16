@@ -46,7 +46,7 @@ export function Registry() {
           <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
         </div>
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-[family-name:var(--font-crimson)] font-normal text-[#EFD2AA] mb-4 sm:mb-6 uppercase tracking-[0.1em] sm:tracking-[0.12em] elegant-text-shadow">
-          Gift Registry
+          Gift Guide
         </h2>
         <div className="flex items-center justify-center gap-2 mb-3 sm:mb-4">
           <div className="h-[1px] w-12 sm:w-16 md:w-24 bg-gradient-to-r from-transparent via-[#EFD2AA] to-transparent" />
@@ -74,35 +74,30 @@ export function Registry() {
 
                 {/* Main message */}
                 <div className="text-center space-y-6 sm:space-y-8 max-w-2xl">
-                  {/* First message */}
-                  <div className="relative">
-                    {/* Decorative top line */}
-                    <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
-                      <div className="w-1.5 h-1.5 bg-[#6A1F08]/60 rounded-full" />
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
-                    </div>
+                  {/* Decorative top line */}
+                  <div className="flex items-center justify-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
+                    <div className="w-1.5 h-1.5 bg-[#6A1F08]/60 rounded-full" />
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
+                  </div>
 
-                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-light text-[#6A1F08] leading-relaxed tracking-wide">
-                      Your presence is the greatest gift of all.
+                  <div className="space-y-4 sm:space-y-5">
+                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-light text-[#6A1F08] leading-relaxed tracking-wide">
+                      With sincere appreciation, we respectfully prefer monetary gifts for our future.
+                    </p>
+                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-light text-[#6A1F08] leading-relaxed tracking-wide">
+                      We kindly ask that any financial gifts be personally given to us on our wedding day.
+                    </p>
+                    <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-[family-name:var(--font-crimson)] font-light text-[#6A1F08] leading-relaxed tracking-wide pt-2">
+                      Your presence is truly a gift to us. Thank you so much. 🤍
                     </p>
                   </div>
 
-                  {/* Second message */}
-                  <div className="relative">
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-light text-[#6A1F08] leading-relaxed tracking-wide">
-                      We prefer monetary gift for future use.
-                    </p>
-                    <p className="text-base sm:text-lg md:text-xl font-[family-name:var(--font-crimson)] font-light text-[#6A1F08] leading-relaxed tracking-wide mt-3">
-                      Gift will be given during the celebration.
-                    </p>
-
-                    {/* Decorative bottom line */}
-                    <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
-                      <div className="w-1.5 h-1.5 bg-[#6A1F08]/60 rounded-full" />
-                      <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
-                    </div>
+                  {/* Decorative bottom line */}
+                  <div className="flex items-center justify-center gap-3 sm:gap-4 mt-6 sm:mt-8">
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
+                    <div className="w-1.5 h-1.5 bg-[#6A1F08]/60 rounded-full" />
+                    <div className="h-px w-12 sm:w-16 md:w-20 bg-[#6A1F08]/50" />
                   </div>
                 </div>
               </div>
