@@ -136,7 +136,7 @@ export function Hero() {
               <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] uppercase tracking-wider text-[#800A06]">{dayOfWeek}</span>
               <span className="text-6xl sm:text-7xl md:text-8xl font-[family-name:var(--font-crimson)] font-light elegant-text-shadow">{day}</span>
               <span className="text-xs sm:text-sm md:text-base font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide ml-2 sm:ml-3 md:ml-4">
-                2:00 PM
+                3:00 PM
               </span>
             </div>
             
@@ -213,6 +213,13 @@ export function Hero() {
               <Heart size={16} className="w-4 h-4 sm:w-5 sm:h-5 relative z-10 group-hover:scale-110 transition-transform duration-300 text-[#800A06]" />
               <span className="relative z-10">RSVP</span>
             </a>
+          </div>
+
+          {/* Entourage Arrival Time - Emphasized */}
+          <div className="pt-4 sm:pt-6 px-4">
+            <p className="text-xs sm:text-sm md:text-base lg:text-lg font-[family-name:var(--font-crimson)] font-semibold text-[#800A06] tracking-wide leading-relaxed border-2 border-[#800A06] rounded-lg py-3 sm:py-4 px-4 sm:px-6 bg-white/50 backdrop-blur-sm">
+              <span className="uppercase tracking-wider">Important:</span> All members of the Wedding Entourage should arrive at the venue by <span className="font-bold">2:00 PM</span>
+            </p>
           </div>
 
           {/* Bottom decorative line */}

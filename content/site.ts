@@ -33,7 +33,7 @@ export const siteConfig = {
     address: "Badiwan Viaduct, Poblacion, along Marcos Highway, Tuba, Benguet",
     date: "May 29, 2026",
     day: "Friday",
-    time: "2:00 PM",
+    time: "3:00 PM",
     entourageTime: "2:00 PM",
     guestsTime: "2:30 PM",
   },
