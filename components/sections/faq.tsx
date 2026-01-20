@@ -13,7 +13,7 @@ const faqItems: FAQItem[] = [
   {
     question: "When and where is the wedding?",
     answer:
-      "The wedding will be held on Friday, May 29, 2026, at Buddy-One Camp, Tuba, Benguet.\n\nCeremony Call Time: 2:00 PM\nCeremony Start: 3:00 PM\nPlease be on time.\n\nCeremony: Back Garden of buddy One camp\n\nReception: Function Hall pf Buddy One Camp (5:30pm)",
+      "The wedding will be held on Friday, May 29, 2026, at Buddy-One Camp, Tuba, Benguet.\n\nAll members of the wedding entourage should arrive at the venue by 2:00PM to join the rehearsal & secure parking.\n\nThe ceremony will start promptly at 3:00PM, and your coordinators will strictly follow the wedding timeline. Kindly arrive on time.\n\nCeremony: Back Garden of Buddy One camp\n\nReception: Function Hall Of Buddy One Camp (5:30pm)",
   },
   {
     question: "What is the dress code?",
