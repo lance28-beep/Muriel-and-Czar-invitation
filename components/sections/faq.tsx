@@ -18,7 +18,7 @@ const faqItems: FAQItem[] = [
   {
     question: "What is the dress code?",
     answer:
-      "Theme: Rustic Countryside - A warm, romantic mix of earthy tones, soft neutrals, and organic textures.\n\nGuest Attire:\n• Ladies: Dress in any earth tones of the theme colors (avoid white or ivory)\n• Gentlemen: Long-sleeve polo in neutral or earth tones\n\nPrincipal Sponsors:\n• Women: Long Gown in Beige, Mocha, or Muted Rose tones\n• Men: Formal Barong Tagalog\n\nGroomsmen & Bridesmaids:\n• Men: White long sleeve with Navy blue pants or slacks\n• Women: Long Gown in Terracotta or Dusty Rose\n\nPlease adhere to the dress code to maintain the rustic countryside theme of our celebration.",
+      "Principal Sponsors\n\nGents: Formal Barong Tagalog (long sleeves) paired with Brown slacks\n\nLadies: Long gown in Beige, Nude, or Light brown tones\n\nSecondary Sponsors\n(Wedding Bearers, Groomsmen & Bridesmaids)\n\nGents: White long-sleeved button-down shirt, navy blue slacks\n\nLadies: Long gown in terracotta or rustic orange tones\n\nBest Man\n\nGents: White long-sleeved button-down shirt with gray vest and slacks\n\nMaid of Honor\n\nLadies: Long gown in Chocolate or Dark Brown shade\n\nFlower Girl\n\nLong gown or dress in dusty pink tone\n\nGuests\n\nWear any Semi-Formal Attire in the following rustic earth tones:\n\nGents: any Gray or Dark brown tones\n\nLadies: any Mustard yellow or Old Rose tones\n\nGentle Reminders for All\n\nPlease wear plain, solid-colored attire only. Kindly avoid printed, patterned, or graphic tops. To maintain the formality of the event, please avoid wearing shorts, slippers, t-shirts, or any casual attire.\n\nWe genuinely appreciate your patience and effort in helping make our wedding day even more special. Thank you!",
   },
   {
     question: "When is the RSVP deadline?",
@@ -53,7 +53,7 @@ const faqItems: FAQItem[] = [
   {
     question: "How do I get to the venue?",
     answer:
-      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to Buddy-One Camp, Tuba, Benguet.\n\nCeremony Call Time: 2:00 PM\nCeremony Start: 3:00 PM\nPlease be on time.\n\nCeremony: Back Garden of buddy One camp\n\nReception: Function Hall pf Buddy One Camp (5:30pm)",
+      "You can use the 'Get Directions' button in the Event Details section to open Google Maps for easy navigation to Buddy-One Camp, Tuba, Benguet.\n\nCeremony Call Time: 2:00 PM\nCeremony Start: 3:00 PM\nPlease be on time.\n\nCeremony: Back Garden of Buddy One camp\n\nReception: Function Hall of Buddy One Camp (5:30pm)",
   },
   {
     question: "Is there parking available?",

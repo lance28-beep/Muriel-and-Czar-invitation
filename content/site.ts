@@ -7,7 +7,7 @@ export const siteConfig = {
   },
   wedding: {
     date: "May 29, 2026",
-    time: "2:00 PM",
+    time: "3:00 PM",
     venue: "Buddy-One Camp, Tuba, Benguet",
     tagline: "are getting married!",
     theme: "Rustic Countryside",

@@ -296,7 +296,6 @@ export function Details() {
                 </p>
                 {/* Color Palette */}
                 <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#E2725B' }} title="Terracotta" />
                   <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#D2691E' }} title="Rustic Orange" />
                   <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#000080' }} title="Navy Blue" />
                 </div>
@@ -369,7 +368,7 @@ export function Details() {
                 <div className="flex gap-2 sm:gap-3 mb-3 sm:mb-4">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#808080' }} title="Gray" />
                   <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#654321' }} title="Dark Brown" />
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#FFDB58' }} title="Mustard Yellow" />
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#DAA520' }} title="Mustard Yellow" />
                   <div className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 rounded-full shadow-md border-2 border-white" style={{ backgroundColor: '#C08081' }} title="Old Rose" />
                 </div>
                 <div className="space-y-2 sm:space-y-3">

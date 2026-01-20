@@ -11,11 +11,8 @@ export function Hero() {
   const ceremonyVenueDetail = siteConfig.ceremony.venueDetail
   const ceremonyAddress = siteConfig.ceremony.address
   
-  // Use complete address from config
-  const completeAddress = ceremonyAddress
-  
   // Create Google Maps link
-  const ceremonyMapsLink = `https://maps.google.com/?q=${encodeURIComponent(completeAddress)}`
+  const ceremonyMapsLink = `https://www.google.com/maps?q=Buddy-One+Camp,+Tuba,+Benguet`
   
   const openInMaps = (link: string) => {
     window.open(link, '_blank', 'noopener,noreferrer')

@@ -295,13 +295,16 @@ export function Footer() {
                 </h4>
               </div>
               <div className="space-y-3 font-[family-name:var(--font-crimson)] text-[#6A1F08] font-medium text-sm sm:text-base">
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-[#6A1F08]" />
-                  <span>{siteConfig.ceremony.venue}</span>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-[#6A1F08] mt-0.5 flex-shrink-0" />
+                  <div className="flex flex-col">
+                    <span>Buddy-One Camp</span>
+                    <span className="text-xs text-[#6A1F08]/80">(Back Garden)</span>
+                  </div>
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="w-4 h-4 text-[#6A1F08]" />
-                  <span>{siteConfig.wedding.time}</span>
+                  <span>3:00 PM</span>
                 </div>
               </div>
             </motion.div>
@@ -320,13 +323,12 @@ export function Footer() {
                 </h4>
               </div>
               <div className="space-y-3 font-[family-name:var(--font-crimson)] text-[#6A1F08] font-medium text-sm sm:text-base">
-                <div className="flex items-center gap-3">
-                  <MapPin className="w-4 h-4 text-[#6A1F08]" />
-                  <span>{siteConfig.reception.venue}</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <Clock className="w-4 h-4 text-[#6A1F08]" />
-                  <span>{siteConfig.reception.time}</span>
+                <div className="flex items-start gap-3">
+                  <MapPin className="w-4 h-4 text-[#6A1F08] mt-0.5 flex-shrink-0" />
+                  <div className="flex flex-col">
+                    <span>Buddy-One Camp</span>
+                    <span className="text-xs text-[#6A1F08]/80">(Function Hall)</span>
+                  </div>
                 </div>
               </div>
             </motion.div>
